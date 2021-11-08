@@ -34,15 +34,17 @@ body {
 	border-radius: 50%;
 }
 
-.header h1 {
+.header-title {
 	width: 60vw;
 	height: auto;
 	text-align: center;
 	font-size: 2.5em;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
 }
 
 .tech-links {
-	width: 12em;
+	width: 14em;
 }
 
 .flex-ul {
