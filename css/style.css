@@ -2,7 +2,7 @@ body {
 	margin: 0px;
 }
 
-header {
+.header {
 	background-image: url("../img/header-bg.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -10,38 +10,42 @@ header {
 	height: 100vh;
 }
 
-header div {
+.header > div {
 	width: 70vw;
 	height: auto;
-	position: absolute;
 	top: 40%;
+}
+
+.centered-div {
+	position: absolute;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-header div img {
+
+.centered-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header img {
 	width: 10em;
 	height: auto;
 	border-radius: 50%;
 }
 
-header div h1 {
+.header h1 {
 	width: 60vw;
 	height: auto;
 	text-align: center;
 	font-size: 2.5em;
 }
 
-.centered {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#tech-links {
+.tech-links {
 	width: 12em;
 }
 
-#tech-links ul {
+.flex-ul {
 	list-style-type: none;
 	margin: 0px;
 	padding: 0px;
@@ -50,7 +54,11 @@ header div h1 {
 	justify-content: space-between;
 }
 
-#tech-links ul li a img {
+.flex-ul > li {
+	display: block;
+}
+
+.tech-links img {
 	width: 4em;
 	height: auto;
 }
