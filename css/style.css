@@ -35,6 +35,7 @@ body {
 }
 
 .header-title {
+	font-family: "Spartan-SemiBold";
 	width: 60vw;
 	height: auto;
 	text-align: center;

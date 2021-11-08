@@ -1,0 +1,24 @@
+@font-face {
+	font-family: "Spartan-Bold";
+	src: url("../fonts/Spartan-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Spartan-Light";
+	src: url("../fonts/Spartan-Light.ttf");
+}
+
+@font-face {
+	font-family: "Spartan-Medium";
+	src: url("../fonts/Spartan-Medium.ttf");
+}
+
+@font-face {
+	font-family: "Spartan-Regular";
+	src: url("../fonts/Spartan-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Spartan-SemiBold";
+	src: url("../fonts/Spartan-SemiBold.ttf");
+}
