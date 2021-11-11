@@ -3,7 +3,7 @@ body {
 	font-family: "Spartan-Regular";
 }
 
-.homepage {
+.home {
 	background-image: url("../img/photo/NASA-Japan-at-night.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -12,7 +12,7 @@ body {
 	padding-top: 50px;
 }
 
-.homepage-content {
+.home-content {
 	width: 70vw;
 	height: auto;
 	top: 40%;
@@ -32,7 +32,7 @@ body {
 	border-radius: 50%;
 }
 
-.homepage-title {
+.home-title {
 	font-family: "Spartan-SemiBold";
 	letter-spacing: 4px;
 	width: 60vw;
