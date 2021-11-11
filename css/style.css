@@ -28,7 +28,7 @@ body {
 	background-color: rgba(255, 255, 255, 0.2);
 }
 
-.header {
+.homepage {
 	background-image: url("../img/photo/NASA-Japan-at-night.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -37,7 +37,7 @@ body {
 	padding-top: 50px;
 }
 
-.header > div {
+.homepage-content {
 	width: 70vw;
 	height: auto;
 	top: 40%;
@@ -51,13 +51,13 @@ body {
 	margin-right: auto;
 }
 
-.header img {
+.profile-picture {
 	width: 10em;
 	height: auto;
 	border-radius: 50%;
 }
 
-.header-title {
+.homepage-title {
 	font-family: "Spartan-SemiBold";
 	letter-spacing: 4px;
 	width: 60vw;
