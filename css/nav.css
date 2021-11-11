@@ -11,6 +11,13 @@
 	justify-content: center;
 }
 
+@media only screen and (min-width: 768px) {
+	.nav {
+		justify-content: flex-start;
+		padding-left: 80px;
+	}
+}
+
 .nav-link {
 	min-width: 5em;
 	text-align: center;
