@@ -69,24 +69,14 @@ body {
 	color: inherit;
 }
 
-.tech-links {
+.tech-link-group {
 	width: 14em;
-}
-
-.flex-ul {
-	list-style-type: none;
-	margin: 0px;
-	padding: 0px;
 	display: flex;
 	align-items: stretch;
 	justify-content: space-between;
 }
 
-.flex-ul > li {
-	display: block;
-}
-
-.tech-links img {
+.tech-link-img {
 	width: 4em;
 	height: auto;
 }
