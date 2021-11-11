@@ -3,31 +3,6 @@ body {
 	font-family: "Spartan-Regular";
 }
 
-.nav {
-	width: 100%;
-	height: 50px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	display: flex;
-	align-items: stretch;
-	/* TODO: Change to flex-start with padding-left if viewport is wide enough */
-	justify-content: center;
-}
-
-.nav-link {
-	min-width: 5em;
-	text-align: center;
-	color: white;
-	text-decoration: none;
-	letter-spacing: 1px;
-	padding: 1em;
-}
-
-.nav-link:hover {
-	background-color: rgba(255, 255, 255, 0.2);
-}
-
 .homepage {
 	background-image: url("../img/photo/NASA-Japan-at-night.jpg");
 	background-repeat: no-repeat;
