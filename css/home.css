@@ -37,12 +37,26 @@
 
 .tech-link-group {
 	width: 14rem;
+	height: 5rem;
 	display: flex;
 	align-items: stretch;
 	justify-content: space-between;
 }
 
+.tech-link {
+	border-radius: 25%;
+	box-sizing: border-box;
+	background-color: transparent;
+	transition-duration: 0.5s;
+}
+
+.tech-link:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	transition-duration: 0.5s;
+}
+
 .tech-link-img {
 	width: 4rem;
 	height: auto;
+	padding: 0.5rem;
 }
