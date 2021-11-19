@@ -44,7 +44,7 @@
 }
 
 .tech-link {
-	border-radius: 25%;
+	border-radius: 20px;
 	box-sizing: border-box;
 	background-color: transparent;
 	transition-duration: 0.5s;
