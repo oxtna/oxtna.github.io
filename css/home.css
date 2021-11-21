@@ -1,4 +1,4 @@
-/* Styling for the website's entry point. */
+/* Styling specific to the website's entry point. */
 
 .home {
 	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("../img/photo/NASA-Japan-at-night.jpg");
@@ -9,54 +9,12 @@
 	padding-top: 50px;
 }
 
-.home-content {
-	width: 70vw;
-	height: auto;
-	top: 40%;
-	color: white;
-	padding-top: 10%;
-}
-
-.profile-picture {
-	width: 10rem;
-	height: auto;
-	border-radius: 50%;
-}
-
-.home-title {
-	font-family: "Spartan-SemiBold";
-	letter-spacing: 4px;
-	width: 60vw;
-	height: auto;
-	text-align: center;
-	font-size: 2.5rem;
-	padding-top: 0.5rem;
-	padding-bottom: 1rem;
-	color: inherit;
-}
-
-.tech-link-group {
-	width: 14rem;
-	height: 5rem;
-	display: flex;
-	align-items: stretch;
-	justify-content: space-between;
-}
-
-.tech-link {
-	border-radius: 20px;
-	box-sizing: border-box;
-	background-color: transparent;
-	transition-duration: 0.5s;
-}
-
-.tech-link:hover {
-	background-color: rgba(255, 255, 255, 0.2);
-	transition-duration: 0.5s;
-}
-
-.tech-link-img {
-	width: 4rem;
-	height: auto;
-	padding: 0.5rem;
+.home-content-wrapper {
+	align-items: center;
+	max-width: 390px;
+	width: 100%;
+	/* placeholder margin-top value */
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
 }
