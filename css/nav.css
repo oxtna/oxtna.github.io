@@ -5,12 +5,10 @@
 	height: 50px;
 	position: fixed;
 	top: 0;
-	left: 0;
 	display: flex;
 	align-items: stretch;
 	justify-content: center;
-	background-color: transparent;
-	transition: 0.5s;
+	letter-spacing: 1px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -22,20 +20,5 @@
 
 .nav.scrolled {
 	background-color: black;
-	transition-duration: 0.5s;
-}
-
-.nav-link {
-	min-width: 5em;
-	text-align: center;
-	color: white;
-	text-decoration: none;
-	letter-spacing: 1px;
-	padding: 1em;
-	transition-duration: 0.5s;
-}
-
-.nav-link:hover {
-	background-color: rgba(255, 255, 255, 0.2);
 	transition-duration: 0.5s;
 }

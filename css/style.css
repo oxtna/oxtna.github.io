@@ -13,8 +13,21 @@ body {
 	color: white;
 }
 
+a {
+	text-decoration: none;
+	color: white;
+}
+
 
 /* Heading stylings */
+
+.centered-text {
+	text-align: center;
+}
+
+.letter-spacing-1 {
+	letter-spacing: 1px;
+}
 
 .h1 {
 	font-family: "Spartan-SemiBold";
@@ -50,6 +63,10 @@ body {
 
 .padding-8 {
 	padding: 8px;
+}
+
+.padding-16 {
+	padding: 16px;
 }
 
 .padding-sides-30 {
