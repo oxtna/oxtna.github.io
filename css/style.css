@@ -4,15 +4,103 @@ html {
 
 * {
 	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-	margin: 0;
 	font-family: "Spartan-Light";
+	color: white;
 }
 
-.centered-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+
+/* Heading stylings */
+
+.h1 {
+	font-family: "Spartan-SemiBold";
+	letter-spacing: 4px;
+	width: auto;
+	font-size: 2.5rem;
+}
+
+
+/* Stylings related to shapes and sizes */
+
+.full-width {
+	width: 100%;
+}
+
+.circle {
+	border-radius: 50%;
+}
+
+.size-64x64 {
+	width: 64px;
+	height: 64px;
+}
+
+.size-160x160 {
+	width: 160px;
+	height: 160px;
+}
+
+.rounded-corners {
+	border-radius: 20px;
+}
+
+.padding-8 {
+	padding: 8px;
+}
+
+.padding-sides-30 {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.padding-top-30 {
+	padding-top: 30px;
+}
+
+.padding-bottom-30 {
+	padding-bottom: 30px;
+}
+
+
+/* Flexbox stylings */
+
+.flex {
+	display: flex;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-space-between {
+	justify-content: space-between;
+}
+
+.flex-space-evenly {
+	justify-content: space-evenly;
+}
+
+.flex-space-around {
+	justify-content: space-around;
+}
+
+
+/* Hover highlighting transitions */
+
+.hover-highlight {
+	background-color: transparent;
+	transition-duration: 0.5s;
+}
+
+.hover-highlight:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	transition-duration: 0.5s;
 }
