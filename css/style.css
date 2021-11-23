@@ -1,3 +1,8 @@
+:root {
+	--primary-color: #47045c;
+	--secondary-color: #facc00;
+}
+
 html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
@@ -17,6 +22,25 @@ body {
 a {
 	text-decoration: none;
 	color: white;
+}
+
+
+/* Color stylings */
+
+.text-primary {
+	color: var(--primary-color);
+}
+
+.text-secondary {
+	color: var(--secondary-color);
+}
+
+.bg-primary {
+	background-color: var(--primary-color);
+}
+
+.bg-secondary {
+	background-color: var(--secondary-color);
 }
 
 
