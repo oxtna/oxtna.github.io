@@ -85,7 +85,32 @@ a {
 }
 
 .card {
-	box-shadow: 0 0 4px black;
+	transition: transform 1s ease;
+}
+
+.card:hover {
+	transform: translateY(-5px) scale(1.02);
+}
+
+.card-hover-shadow {
+	position: relative;
+}
+
+.card-hover-shadow::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+	border-radius: inherit;
+	transition: opacity 0.5s ease;
+}
+
+.card-hover-shadow:hover::after {
+	opacity: 1;
 }
 
 .size-64x64 {
