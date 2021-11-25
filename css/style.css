@@ -69,6 +69,13 @@ a {
 	font-size: 2rem;
 }
 
+.h2::after {
+	content: '';
+	display: block;
+	border-top: 0.15rem solid var(--secondary-color);
+	margin-top: 1rem;
+}
+
 .h3 {
 	font-family: "Spartan-Regular";
 	letter-spacing: 1px;
