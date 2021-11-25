@@ -1,0 +1,11 @@
+/* Stylings for the about part of the website. */
+
+.about {
+	background-color: black;
+}
+
+.about-content-wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 720px;
+}
