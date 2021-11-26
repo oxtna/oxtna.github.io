@@ -23,6 +23,7 @@ html {
 
 body {
 	font-family: "Spartan-Light";
+	letter-spacing: 1px;
 	color: white;
 	background-color: var(--black);
 }
@@ -86,6 +87,10 @@ a {
 	text-align: center;
 }
 
+.small-text {
+	font-size: 0.75rem !important;
+}
+
 .h1 {
 	font-family: "Spartan-SemiBold";
 	letter-spacing: 4px;
@@ -109,8 +114,13 @@ a {
 
 .h3 {
 	font-family: "Spartan-Regular";
-	letter-spacing: 1px;
-	line-height: 24px;
+	line-height: 1.5rem;
+	width: auto;
+	font-size: 1rem;
+}
+
+.h4 {
+	line-height: 1.5rem;
 	width: auto;
 	font-size: 1rem;
 }
@@ -127,7 +137,15 @@ a {
 }
 
 .card {
-	transition: transform 1s ease;
+	transition: transform 0.5s ease;
+	min-width: 180px;
+	width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+	.card {
+		min-width: 324px;
+	}
 }
 
 .card:hover {
@@ -181,6 +199,10 @@ a {
 	padding: 16px;
 }
 
+.padding-30 {
+	padding: 30px;
+}
+
 .padding-sides-30 {
 	padding-left: 30px;
 	padding-right: 30px;
@@ -188,6 +210,10 @@ a {
 
 .padding-top-30 {
 	padding-top: 30px;
+}
+
+.padding-bottom-20 {
+	padding-bottom: 20px;
 }
 
 .padding-bottom-30 {
