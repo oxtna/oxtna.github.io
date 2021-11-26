@@ -190,6 +190,11 @@ a {
 	justify-content: space-around;
 }
 
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
+
 .grid {
 	display: grid;
 	grid-template-rows: auto;
