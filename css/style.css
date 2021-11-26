@@ -205,6 +205,10 @@ a {
 	gap: 40px;
 }
 
+.card-grid {
+	grid-template-columns: auto;
+}
+
 @media only screen and (min-width: 768px) {
 	.card-grid {
 		grid-template-columns: 1fr 1fr;
