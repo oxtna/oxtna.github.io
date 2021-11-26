@@ -48,6 +48,10 @@ a {
 	background-color: var(--secondary-color);
 }
 
+.bg-black {
+	background-color: black;
+}
+
 
 /* Heading stylings */
 
