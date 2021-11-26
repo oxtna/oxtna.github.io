@@ -10,3 +10,52 @@
 .projects-header {
 	max-width: 720px;
 }
+
+.card-grid {
+	grid-template-columns: auto;
+}
+
+.card {
+	transition: transform 0.5s ease;
+	min-width: 180px;
+	width: 100%;
+}
+
+.card:hover {
+	transform: scale(1.05);
+}
+
+.card-hover-shadow {
+	position: relative;
+}
+
+.card-hover-shadow::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.6);
+	border-radius: inherit;
+	transition: opacity 0.5s ease;
+}
+
+.card-hover-shadow:hover::after {
+	opacity: 1;
+}
+
+.clicked {
+	background-color: var(--secondary-color);
+}
+
+@media only screen and (min-width: 768px) {
+	.card-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	.card {
+		min-width: 324px;
+	}
+}
