@@ -12,8 +12,7 @@
 	align-items: center;
 	max-width: 390px;
 	width: 100%;
-	/* placeholder margin-top value */
-	margin-top: 50px;
+	margin-top: var(--nav-size);
 	margin-left: auto;
 	margin-right: auto;
 }
