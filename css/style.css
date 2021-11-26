@@ -1,6 +1,12 @@
 :root {
-	--primary-color: #47045c;
-	--secondary-color: #facc00;
+	/* color scheme */
+	--black: #010101ff;
+	--gray: #505559ff;
+	--blue-gray: #232a32ff;
+	--primary-color: #0d2338;
+	--secondary-color: #e3b556ff;
+
+	/* constant sizes */
 	--nav-size: 50px;
 }
 
@@ -18,6 +24,7 @@ html {
 body {
 	font-family: "Spartan-Light";
 	color: white;
+	background-color: var(--black);
 }
 
 a {
@@ -40,6 +47,18 @@ a {
 	color: var(--secondary-color);
 }
 
+.text-black {
+	color: var(--black);
+}
+
+.text-gray {
+	color: var(--gray);
+}
+
+.text-blue-gray {
+	color: var(--blue-gray);
+}
+
 .bg-primary {
 	background-color: var(--primary-color);
 }
@@ -49,7 +68,15 @@ a {
 }
 
 .bg-black {
-	background-color: black;
+	background-color: var(--black);
+}
+
+.bg-gray {
+	background-color: var(--gray);
+}
+
+.bg-blue-gray {
+	background-color: var(--blue-gray);
 }
 
 
