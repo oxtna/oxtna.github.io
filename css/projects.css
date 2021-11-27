@@ -1,65 +1,65 @@
 /* Styling for project part of the website and relevant containers. */
 
 .projects {
-	background-color: var(--black);
+  background-color: var(--black);
 }
 
 .projects-content-wrapper {
-	align-items: center;
-	width: 100%;
+  align-items: center;
+  width: 100%;
 }
 
 .projects-header {
-	max-width: 720px;
+  max-width: 720px;
 }
 
 .card-grid {
-	grid-template-columns: auto;
+  grid-template-columns: auto;
 }
 
 .card {
-	transition: transform 0.5s ease;
-	min-width: 180px;
-	width: 100%;
-	background-color: var(--primary-color);
+  transition: transform 0.5s ease;
+  min-width: 180px;
+  width: 100%;
+  background-color: var(--primary-color);
 }
 
 .card:hover {
-	transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .card-hover-shadow {
-	position: relative;
+  position: relative;
 }
 
 .card-hover-shadow::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	opacity: 0;
-	box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.6);
-	border-radius: inherit;
-	transition: opacity 0.25s ease;
-	pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.6);
+  border-radius: inherit;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
 }
 
 .card-hover-shadow:hover::after {
-	opacity: 1;
+  opacity: 1;
 }
 
 .clicked {
-	background-color: var(--tertiary-color);
+  background-color: var(--tertiary-color);
 }
 
 @media only screen and (min-width: 768px) {
-	.card-grid {
-		grid-template-columns: 1fr 1fr;
-	}
-	
-	.card {
-		min-width: 324px;
-	}
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+    min-width: 324px;
+  }
 }

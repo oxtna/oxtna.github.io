@@ -10,11 +10,12 @@ window.addEventListener("scroll", () => {
 });
 
 const cards = document.getElementsByClassName("card");
-Array.from(cards).forEach(card => card.addEventListener("click", () => {
-	if (card.classList.contains("clicked")) {
-		card.classList.remove("clicked");
-	}
-	else {
-		card.classList.add("clicked");
-	}
-}));
+Array.from(cards).forEach((card) =>
+	card.addEventListener("click", () => {
+		if (card.classList.contains("clicked")) {
+			card.classList.remove("clicked");
+		} else {
+			card.classList.add("clicked");
+		}
+	})
+);

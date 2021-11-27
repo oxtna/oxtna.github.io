@@ -1,211 +1,209 @@
 :root {
-	/* color scheme */
-	--black: #010101ff;
-	--gray: #505559ff;
-	--primary-color: #0d2338;
-	--secondary-color: #e3b556ff;
-	--tertiary-color: #1c3249;
+  /* color scheme */
+  --black: #010101ff;
+  --gray: #505559ff;
+  --primary-color: #0d2338;
+  --secondary-color: #e3b556ff;
+  --tertiary-color: #1c3249;
 
-	/* constant sizes */
-	--nav-size: 50px;
+  /* constant sizes */
+  --nav-size: 50px;
 }
 
 html {
-	box-sizing: border-box;
-	scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-*, *::before, *::after {
-	box-sizing: inherit;
-	margin: 0;
-	padding: 0;
-	outline: 0;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  outline: 0;
 }
 
 body {
-	font-family: "Spartan-Light";
-	letter-spacing: 1px;
-	color: white;
-	background-color: var(--black);
+  font-family: "Spartan-Light";
+  letter-spacing: 1px;
+  color: white;
+  background-color: var(--black);
 }
 
 a {
-	text-decoration: none;
-	color: white;
+  text-decoration: none;
+  color: white;
 }
 
 img {
-	pointer-events: none;
+  pointer-events: none;
 }
 
 .hidden {
-	display: none;
+  display: none;
 }
 
 .button {
-	background-color: var(--secondary-color);
-	width: max-content;
+  background-color: var(--secondary-color);
+  width: max-content;
 }
 
 .button:hover,
 .button:focus {
-	background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
-
 
 /* Heading stylings */
 
 .centered-text {
-	text-align: center;
+  text-align: center;
 }
 
 .small-text {
-	font-size: 0.75rem !important;
+  font-size: 0.75rem !important;
 }
 
 .h1 {
-	font-family: "Spartan-SemiBold";
-	letter-spacing: 4px;
-	width: auto;
-	font-size: 2.5rem;
+  font-family: "Spartan-SemiBold";
+  letter-spacing: 4px;
+  width: auto;
+  font-size: 2.5rem;
 }
 
 .h2 {
-	font-family: "Spartan-Medium";
-	letter-spacing: 2px;
-	width: auto;
-	font-size: 2rem;
+  font-family: "Spartan-Medium";
+  letter-spacing: 2px;
+  width: auto;
+  font-size: 2rem;
 }
 
 .h2::after {
-	content: '';
-	display: block;
-	border-top: 0.15rem solid var(--secondary-color);
-	margin-top: 1rem;
+  content: "";
+  display: block;
+  border-top: 0.15rem solid var(--secondary-color);
+  margin-top: 1rem;
 }
 
 .h3 {
-	font-family: "Spartan-Regular";
-	line-height: 1.5rem;
-	width: auto;
-	font-size: 1rem;
+  font-family: "Spartan-Regular";
+  line-height: 1.5rem;
+  width: auto;
+  font-size: 1rem;
 }
 
 .h4 {
-	line-height: 1.5rem;
-	width: auto;
-	font-size: 1rem;
+  line-height: 1.5rem;
+  width: auto;
+  font-size: 1rem;
 }
-
 
 /* Stylings related to shapes and sizes */
 
 .full-width {
-	width: 100%;
+  width: 100%;
 }
 
 .circle {
-	border-radius: 50%;
+  border-radius: 50%;
 }
 
 .size-64x64 {
-	width: 64px;
-	height: 64px;
+  width: 64px;
+  height: 64px;
 }
 
 .size-160x160 {
-	width: 160px;
-	height: 160px;
+  width: 160px;
+  height: 160px;
 }
 
 .rounded-corners {
-	border-radius: 20px;
+  border-radius: 20px;
 }
 
 .padding-nav-top {
-	padding-top: var(--nav-size);
+  padding-top: var(--nav-size);
 }
 
 .padding-8 {
-	padding: 8px;
+  padding: 8px;
 }
 
 .padding-16 {
-	padding: 16px;
+  padding: 16px;
 }
 
 .padding-30 {
-	padding: 30px;
+  padding: 30px;
 }
 
 .padding-sides-30 {
-	padding-left: 30px;
-	padding-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .padding-top-30 {
-	padding-top: 30px;
+  padding-top: 30px;
 }
 
 .padding-bottom-20 {
-	padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .padding-bottom-30 {
-	padding-bottom: 30px;
+  padding-bottom: 30px;
 }
-
 
 /* Flex and grid stylings */
 
 .flex {
-	display: flex;
+  display: flex;
 }
 
 .flex-row {
-	flex-direction: row;
+  flex-direction: row;
 }
 
 .flex-column {
-	flex-direction: column;
+  flex-direction: column;
 }
 
 .flex-space-between {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
 .flex-space-evenly {
-	justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .flex-space-around {
-	justify-content: space-around;
+  justify-content: space-around;
 }
 
 .flex-center {
-	justify-content: center;
-	align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid {
-	display: grid;
-	grid-template-rows: auto;
-	grid-template-columns: auto;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
 }
 
 .gap-40 {
-	gap: 40px;
+  gap: 40px;
 }
-
 
 /* Hover and focus highlighting transitions */
 
 .hover-highlight {
-	background-color: transparent;
-	transition-duration: 0.5s;
+  background-color: transparent;
+  transition-duration: 0.5s;
 }
 
 .hover-highlight:hover,
 .hover-highlight:focus {
-	background-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.35);
 }

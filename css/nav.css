@@ -1,24 +1,24 @@
 /* Styling for the navigation bar at the top of the website. */
 
 .nav {
-	width: 100%;
-	height: var(--nav-size);
-	position: fixed;
-	top: 0;
-	display: flex;
-	align-items: stretch;
-	justify-content: center;
-	letter-spacing: 1px;
-	transition-duration: 0.5s;
+  width: 100%;
+  height: var(--nav-size);
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  letter-spacing: 1px;
+  transition-duration: 0.5s;
 }
 
 @media only screen and (min-width: 768px) {
-	.nav {
-		justify-content: flex-start;
-		padding-left: 80px;
-	}
+  .nav {
+    justify-content: flex-start;
+    padding-left: 80px;
+  }
 }
 
 .nav.scrolled {
-	background-color: var(--black);
+  background-color: var(--black);
 }

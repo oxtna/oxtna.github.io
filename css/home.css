@@ -1,18 +1,19 @@
 /* Styling specific to the website's entry point. */
 
 .home {
-	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("../img/photo/NASA-Japan-at-night.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+    url("../img/photo/NASA-Japan-at-night.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 
 .home-content-wrapper {
-	align-items: center;
-	max-width: 390px;
-	width: 100%;
-	margin-top: var(--nav-size);
-	margin-left: auto;
-	margin-right: auto;
+  align-items: center;
+  max-width: 390px;
+  width: 100%;
+  margin-top: var(--nav-size);
+  margin-left: auto;
+  margin-right: auto;
 }
