@@ -227,7 +227,7 @@ a {
 }
 
 
-/* Hover highlighting transitions */
+/* Hover and focus highlighting transitions */
 
 .hover-highlight {
 	background-color: transparent;
