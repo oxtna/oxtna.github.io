@@ -38,6 +38,15 @@ a {
 	display: none;
 }
 
+.button {
+	background-color: var(--secondary-color);
+}
+
+.button:hover,
+.button:focus {
+	background-color: var(--primary-color);
+}
+
 
 /* Color stylings */
 

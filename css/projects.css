@@ -40,6 +40,7 @@
 	box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.6);
 	border-radius: inherit;
 	transition: opacity 0.25s ease;
+	pointer-events: none;
 }
 
 .card-hover-shadow:hover::after {
