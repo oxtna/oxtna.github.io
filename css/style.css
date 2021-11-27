@@ -48,49 +48,6 @@ a {
 }
 
 
-/* Color stylings */
-
-.text-primary {
-	color: var(--primary-color);
-}
-
-.text-secondary {
-	color: var(--secondary-color);
-}
-
-.text-tertiary {
-	color: var(--tertiary-color);
-}
-
-.text-black {
-	color: var(--black);
-}
-
-.text-gray {
-	color: var(--gray);
-}
-
-.bg-primary {
-	background-color: var(--primary-color);
-}
-
-.bg-secondary {
-	background-color: var(--secondary-color);
-}
-
-.bg-tertiary-color {
-	background-color: var(--tertiary-color);
-}
-
-.bg-black {
-	background-color: var(--black);
-}
-
-.bg-gray {
-	background-color: var(--gray);
-}
-
-
 /* Heading stylings */
 
 .centered-text {

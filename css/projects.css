@@ -1,6 +1,8 @@
 /* Styling for project part of the website and relevant containers. */
 
-/* .projects {} */
+.projects {
+	background-color: var(--black);
+}
 
 .projects-content-wrapper {
 	align-items: center;
@@ -19,6 +21,7 @@
 	transition: transform 0.5s ease;
 	min-width: 180px;
 	width: 100%;
+	background-color: var(--primary-color);
 }
 
 .card:hover {
@@ -48,7 +51,7 @@
 }
 
 .clicked {
-	background-color: var(--secondary-color);
+	background-color: var(--tertiary-color);
 }
 
 @media only screen and (min-width: 768px) {
