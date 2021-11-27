@@ -2,9 +2,9 @@
 	/* color scheme */
 	--black: #010101ff;
 	--gray: #505559ff;
-	--blue-gray: #232a32ff;
 	--primary-color: #0d2338;
 	--secondary-color: #e3b556ff;
+	--tertiary-color: #1c3249;
 
 	/* constant sizes */
 	--nav-size: 50px;
@@ -58,16 +58,16 @@ a {
 	color: var(--secondary-color);
 }
 
+.text-tertiary {
+	color: var(--tertiary-color);
+}
+
 .text-black {
 	color: var(--black);
 }
 
 .text-gray {
 	color: var(--gray);
-}
-
-.text-blue-gray {
-	color: var(--blue-gray);
 }
 
 .bg-primary {
@@ -78,16 +78,16 @@ a {
 	background-color: var(--secondary-color);
 }
 
+.bg-tertiary-color {
+	background-color: var(--tertiary-color);
+}
+
 .bg-black {
 	background-color: var(--black);
 }
 
 .bg-gray {
 	background-color: var(--gray);
-}
-
-.bg-blue-gray {
-	background-color: var(--blue-gray);
 }
 
 
