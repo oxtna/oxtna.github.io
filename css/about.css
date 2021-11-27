@@ -1,8 +1,13 @@
-/* Stylings for the about part of the website. */
+/* Styling for the about part of the website. */
 
 .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   background-color: var(--black);
+  padding: var(--nav-size) 30px;
 }
 
 @media only screen and (min-height: 640px) {
@@ -13,4 +18,5 @@
 
 .about-content-wrapper {
   max-width: 720px;
+  padding: 30px;
 }

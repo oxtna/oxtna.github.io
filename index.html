@@ -2,15 +2,15 @@
 <html>
 
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Rafał Kajomof</title>
-	<link rel="stylesheet" type="text/css" href="./css/fonts.css" />
-	<link rel="stylesheet" type="text/css" href="./css/style.css" />
-	<link rel="stylesheet" type="text/css" href="./css/nav.css" />
-	<link rel="stylesheet" type="text/css" href="./css/home.css" />
-	<link rel="stylesheet" type="text/css" href="./css/about.css" />
-	<link rel="stylesheet" type="text/css" href="./css/projects.css" />
+	<link rel="stylesheet" type="text/css" href="./css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/nav.css">
+	<link rel="stylesheet" type="text/css" href="./css/home.css">
+	<link rel="stylesheet" type="text/css" href="./css/about.css">
+	<link rel="stylesheet" type="text/css" href="./css/projects.css">
 </head>
 
 <body>
@@ -20,30 +20,25 @@
 		<a href="#projects" class="centered-text padding-16 hover-highlight">Projects</a>
 		<a href="#contact" class="centered-text padding-16 hover-highlight">Contact</a>
 	</nav>
-	<div class="home padding-nav-top padding-sides-30" id="home">
-		<div class="home-content-wrapper flex flex-column">
-			<img src="./img/photo/profile-picture.jpg" alt="Rafał Kajomof Profile Picture"
-				class="size-160x160 circle" />
+	<div class="home" id="home">
+		<div class="home-content-wrapper">
+			<img src="./img/photo/profile-picture.jpg" alt="Rafał Kajomof Profile Picture" class="size-160x160 circle">
 			<h1 class="h1 centered-text padding-top-30 padding-bottom-30">
 				Rafał Kajomof
 			</h1>
-			<nav class="flex flex-space-evenly full-width">
+			<nav class="home-nav">
 				<a href="https://github.com/oxtna" target="_blank" class="size-64x64 hover-highlight rounded-corners">
-					<img src="./img/icon/GitHub-logo.png" alt="GitHub™" class="size-64x64 padding-8" />
+					<img src="./img/icon/GitHub-logo.png" alt="GitHub™" class="size-64x64 padding-8">
 				</a>
 				<a href="https://linkedin.com/in/rafal-kajomof" target="_blank"
 					class="size-64x64 hover-highlight rounded-corners">
-					<img src="./img/icon/LinkedIn-logo.png" alt="LinkedIn™" class="size-64x64 padding-8" />
+					<img src="./img/icon/LinkedIn-logo.png" alt="LinkedIn™" class="size-64x64 padding-8">
 				</a>
 			</nav>
 		</div>
 	</div>
-	<div class="
-				about
-				flex flex-column flex-center
-				padding-nav-top padding-bottom-30 padding-sides-30
-			" id="about">
-		<div class="about-content-wrapper padding-30">
+	<div class="about" id="about">
+		<div class="about-content-wrapper">
 			<h2 class="h2">About me</h2>
 			<h4 class="h4 padding-top-30">
 				In short, I'm a self-learning software developer with a bit too much
@@ -52,9 +47,9 @@
 			</h4>
 		</div>
 	</div>
-	<div class="projects padding-nav-top padding-sides-30" id="projects">
-		<div class="projects-content-wrapper flex flex-column">
-			<div class="projects-header padding-30">
+	<div class="projects" id="projects">
+		<div class="projects-content-wrapper">
+			<div class="projects-header">
 				<h2 class="h2 padding-bottom-20">Some of my works</h2>
 				<h4 class="h4">
 					I've been trying making a lot of different things, and here are some
@@ -62,13 +57,8 @@
 					might not be really impressive.
 				</h4>
 			</div>
-			<div class="grid gap-40 card-grid padding-top-30 padding-bottom-30">
-				<div class="
-							card card-hover-shadow
-							flex flex-column
-							rounded-corners
-							padding-30
-						">
+			<div class="card-grid">
+				<div class="card card-hover-shadow rounded-corners">
 					<!-- TODO: Add a tap/click icon placed in the right corner of the card. -->
 					<h3 class="h3 centered-text padding-bottom-20">1</h3>
 					<h4 class="h4 centered-text small-text">
@@ -76,12 +66,7 @@
 					</h4>
 					<a href="#" class="button">#</a>
 				</div>
-				<div class="
-							card card-hover-shadow
-							flex flex-column
-							rounded-corners
-							padding-30
-						">
+				<div class="card card-hover-shadow rounded-corners">
 					<!-- TODO: Add a tap/click icon placed in the right corner of the card. -->
 					<h3 class="h3 centered-text padding-bottom-20">2</h3>
 					<h4 class="h4 centered-text small-text">
@@ -89,12 +74,7 @@
 					</h4>
 					<a href="#" class="button">#</a>
 				</div>
-				<div class="
-							card card-hover-shadow
-							flex flex-column
-							rounded-corners
-							padding-30
-						">
+				<div class="card card-hover-shadow rounded-corners">
 					<!-- TODO: Add a tap/click icon placed in the right corner of the card. -->
 					<h3 class="h3 centered-text padding-bottom-20">3</h3>
 					<h4 class="h4 centered-text small-text">
@@ -102,12 +82,7 @@
 					</h4>
 					<a href="#" class="button">#</a>
 				</div>
-				<div class="
-							card card-hover-shadow
-							flex flex-column
-							rounded-corners
-							padding-30
-						">
+				<div class="card card-hover-shadow rounded-corners">
 					<!-- TODO: Add a tap/click icon placed in the right corner of the card. -->
 					<h3 class="h3 centered-text padding-bottom-20">4</h3>
 					<h4 class="h4 centered-text small-text">
@@ -121,7 +96,9 @@
 	<div class="hidden">
 		TODO: My works in progress, what am I doing currently
 	</div>
-	<div class="hidden">TODO: Future, what am I planning next</div>
+	<div class="hidden">
+		TODO: Future, what am I planning next
+	</div>
 	<div class="hidden">
 		TODO: Footer
 		<!-- Required link to icon provider's website as per their terms of service. -->
