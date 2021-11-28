@@ -7,7 +7,7 @@
   align-items: center;
   height: 100vh;
   background-color: var(--black);
-  padding: var(--nav-size) 30px;
+  padding: var(--nav-size) 20px;
 }
 
 @media only screen and (min-height: 640px) {
@@ -18,5 +18,5 @@
 
 .about-content-wrapper {
   max-width: 720px;
-  padding: 30px;
+  padding: 20px;
 }

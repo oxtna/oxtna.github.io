@@ -130,16 +130,12 @@ img {
   padding: 16px;
 }
 
-.padding-top-30 {
-  padding-top: 30px;
+.padding-top-20 {
+  padding-top: 20px;
 }
 
 .padding-bottom-20 {
   padding-bottom: 20px;
-}
-
-.padding-bottom-30 {
-  padding-bottom: 30px;
 }
 
 /* Hover and focus highlighting transitions */
