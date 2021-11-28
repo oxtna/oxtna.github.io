@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/home.css">
 	<link rel="stylesheet" type="text/css" href="./css/about.css">
 	<link rel="stylesheet" type="text/css" href="./css/projects.css">
+	<link rel="stylesheet" type="text/css" href="./css/present.css">
 </head>
 
 <body>
@@ -18,14 +19,13 @@
 		<a href="#home" class="centered-text padding-16 hover-highlight">Home</a>
 		<a href="#about" class="centered-text padding-16 hover-highlight">About</a>
 		<a href="#projects" class="centered-text padding-16 hover-highlight">Projects</a>
+		<a href="#present" class="centered-text padding-16 hover-highlight">Present</a>
 		<a href="#contact" class="centered-text padding-16 hover-highlight">Contact</a>
 	</nav>
 	<div class="home" id="home">
 		<div class="home-content-wrapper">
 			<img src="./img/photo/profile-picture.jpg" alt="Rafał Kajomof Profile Picture" class="size-160x160 circle">
-			<h1 class="h1 centered-text padding-top-30 padding-bottom-30">
-				Rafał Kajomof
-			</h1>
+			<h1 class="h1 centered-text padding-top-30 padding-bottom-30">Rafał Kajomof</h1>
 			<nav class="home-nav">
 				<a href="https://github.com/oxtna" target="_blank" class="size-64x64 hover-highlight rounded-corners">
 					<img src="./img/icon/GitHub-logo.png" alt="GitHub™" class="size-64x64 padding-8">
@@ -41,9 +41,8 @@
 		<div class="about-content-wrapper">
 			<h2 class="h2">About me</h2>
 			<h4 class="h4 padding-top-30">
-				In short, I'm a self-learning software developer with a bit too much
-				passion for coding. I aim to become a full-stack developer and make a
-				living out of it, and have fun along the way.
+				In short, I'm a self-learning software developer with a bit too much passion for coding. I aim to become
+				a full-stack developer and make a living out of it, and have fun along the way.
 			</h4>
 		</div>
 	</div>
@@ -52,9 +51,8 @@
 			<div class="projects-header">
 				<h2 class="h2 padding-bottom-20">Some of my works</h2>
 				<h4 class="h4">
-					I've been trying making a lot of different things, and here are some
-					things that I've thought are worthy of showing, even though they
-					might not be really impressive.
+					I've been trying making a lot of different things, and here are some things that I've thought are
+					worthy of showing, even though they might not be really impressive.
 				</h4>
 			</div>
 			<div class="card-grid">
@@ -93,17 +91,32 @@
 			</div>
 		</div>
 	</div>
-	<div class="hidden">
-		TODO: My works in progress, what am I doing currently
+	<div class="present" id="present">
+		<div class="present-content-wrapper">
+			<h2 class="h2 padding-bottom-20">My present and future ventures</h2>
+			<div class="terminal">
+				<div class="terminal-header">
+					<div class="terminal-tab">
+						<p class="terminal-tab-title">Present</p>
+					</div>
+					<div class="terminal-tab">
+						<p class="terminal-tab-title">Future</p>
+					</div>
+				</div>
+				<div class="terminal-content">
+					<p class="terminal-prompt">ls</p>
+					<p class="terminal-output"></p>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="hidden">
-		TODO: Future, what am I planning next
+	<div class="contact" id="contact">
 	</div>
-	<div class="hidden">
+	<footer class="hidden">
 		TODO: Footer
 		<!-- Required link to icon provider's website as per their terms of service. -->
 		<a href="https://icons8.com/">icons8</a>
-	</div>
+	</footer>
 	<script src="./js/index.js"></script>
 </body>
 
