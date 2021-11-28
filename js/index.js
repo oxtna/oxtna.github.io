@@ -12,10 +12,10 @@ window.addEventListener("scroll", () => {
 const cards = document.getElementsByClassName("card");
 Array.from(cards).forEach((card) =>
 	card.addEventListener("click", () => {
-		if (card.classList.contains("clicked")) {
-			card.classList.remove("clicked");
+		if (card.classList.contains("reversed")) {
+			card.classList.remove("reversed");
 		} else {
-			card.classList.add("clicked");
+			card.classList.add("reversed");
 		}
 	})
 );

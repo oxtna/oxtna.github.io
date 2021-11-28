@@ -35,33 +35,7 @@
   padding: 30px;
 }
 
-.card:hover {
-  transform: scale(1.05);
-}
-
-.card-hover-shadow {
-  position: relative;
-}
-
-.card-hover-shadow::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.6);
-  border-radius: inherit;
-  transition: opacity 0.25s ease;
-  pointer-events: none;
-}
-
-.card-hover-shadow:hover::after {
-  opacity: 1;
-}
-
-.clicked {
+.reversed {
   background-color: var(--tertiary-color);
 }
 
@@ -72,5 +46,35 @@
 
   .card {
     min-width: 324px;
+  }
+}
+
+@media only screen and (hover) {
+  .card:hover,
+  .card:focus-within {
+    transform: scale(1.05);
+  }
+
+  .card-hover-shadow {
+    position: relative;
+  }
+
+  .card-hover-shadow::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.6);
+    border-radius: inherit;
+    transition: opacity 0.25s ease;
+    pointer-events: none;
+  }
+
+  .card-hover-shadow:hover::after,
+  .card:focus-within.card-hover-shadow::after {
+    opacity: 1;
   }
 }
