@@ -2,7 +2,7 @@
 
 .projects {
   background-color: var(--black);
-  padding: var(--nav-size) 30px;
+  padding: var(--nav-size) 20px;
 }
 
 .projects-content-wrapper {
@@ -14,7 +14,7 @@
 
 .projects-header {
   max-width: 720px;
-  padding: 30px;
+  padding: 20px;
 }
 
 .card-grid {
@@ -32,7 +32,7 @@
   min-width: 180px;
   width: 100%;
   background-color: var(--primary-color);
-  padding: 30px;
+  padding: 20px;
 }
 
 .reversed {
