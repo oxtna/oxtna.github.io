@@ -2,25 +2,30 @@
 
 @font-face {
   font-family: "Spartan-Bold";
-  src: url("../fonts/Spartan-Bold.ttf") format("truetype");
+  src: url("../fonts/Spartan/Spartan-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Spartan-Light";
-  src: url("../fonts/Spartan-Light.ttf") format("truetype");
+  src: url("../fonts/Spartan/Spartan-Light.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Spartan-Medium";
-  src: url("../fonts/Spartan-Medium.ttf") format("truetype");
+  src: url("../fonts/Spartan/Spartan-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Spartan-Regular";
-  src: url("../fonts/Spartan-Regular.ttf") format("truetype");
+  src: url("../fonts/Spartan/Spartan-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Spartan-SemiBold";
-  src: url("../fonts/Spartan-SemiBold.ttf") format("truetype");
+  src: url("../fonts/Spartan/Spartan-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SourceCodePro-Light";
+  src: url("../fonts/SourceCodePro/SourceCodePro-Light.ttf") format("truetype");
 }
