@@ -19,3 +19,16 @@ Array.from(cards).forEach((card) =>
 		}
 	})
 );
+
+const terminalTabs = document.getElementsByClassName("terminal-tab");
+Array.from(terminalTabs).forEach((terminalTab) =>
+	terminalTab.addEventListener("click", () => {
+		if (terminalTab.classList.contains("selected")) {
+			terminalTab.classList.remove("selected");
+			return;
+		}
+		Array.from(terminalTabs).forEach((otherTerminalTab) =>
+			otherTerminalTab.classList.remove("selected"));
+		terminalTab.classList.add("selected");
+	})
+);

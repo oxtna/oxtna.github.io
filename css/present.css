@@ -13,6 +13,12 @@
   padding: 20px;
 }
 
+.present-header {
+  width: 100%;
+  max-width: 720px;
+  padding: 20px;
+}
+
 .terminal {
   margin-top: 50px;
 }
@@ -21,34 +27,134 @@
   background-color: var(--gray);
   display: flex;
   justify-content: flex-start;
-  width: 70vw;
+  align-items: flex-end;
+  width: 100%;
+  height: 33px;
+  border-radius: 8px 8px 0 0;
+  padding-left: 10px;
+  overflow: hidden;
 }
 
 .terminal-tab {
-  background-color: var(--gray);
+  height: 30px;
+  line-height: 30px;
+  width: 7rem;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
 }
 
 .terminal-tab.selected {
   background-color: var(--black);
 }
 
-.terminal-tab-title {
+.terminal-tab.selected::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -16px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  box-shadow: 8px 8px 0 var(--black);
+  pointer-events: none;
+}
+
+.terminal-tab.selected::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -16px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  box-shadow: -8px 8px 0 var(--black);
+  pointer-events: none;
 }
 
 .terminal-button-container {
   background-color: var(--gray);
   display: flex;
   margin-left: auto;
+  align-self: center;
+}
+
+.terminal-button {
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  height: 13px;
+  width: 13px;
+  margin-right: 10px;
 }
 
 .terminal-content {
+  font-family: "SourceCodePro-Light";
+  letter-spacing: 0;
   background-color: var(--primary-color);
   width: 100%;
   height: 50vh;
+  border-radius: 0 0 8px 8px;
+  padding: 20px;
 }
 
 .terminal-prompt {
+  overflow: hidden;
+  border-right: 1ch solid white;
+  width: 4ch;
+  white-space: nowrap;
+  animation: typing 0.5s steps(2) 1s forwards,
+    caret-blink 2.5s steps(1) 0.5s forwards;
+}
+
+@keyframes typing {
+  to {
+    width: 6ch;
+  }
+}
+
+@keyframes caret-blink {
+  0% {
+    border-color: transparent;
+  }
+  20% {
+    border-color: white;
+  }
+  60% {
+    border-color: transparent;
+  }
+  80% {
+    border-color: white;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+.terminal-prompt::before {
+  content: ">> ";
 }
 
 .terminal-output {
+  margin-top: 1rem;
+  visibility: hidden;
+  animation: show-output 0s 3s forwards;
+}
+
+@keyframes show-output {
+  to {
+    visibility: visible;
+  }
+}
+
+.yellow {
+  background-color: #f8b340;
+}
+
+.green {
+  background-color: #40c44a;
+}
+
+.red {
+  background-color: #f1544e;
 }
