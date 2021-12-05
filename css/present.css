@@ -47,6 +47,7 @@
 
 .terminal-tab.selected {
   background-color: var(--black);
+  box-shadow: 0 2px 8px -2px var(--black);
 }
 
 .terminal-tab.selected::before {
