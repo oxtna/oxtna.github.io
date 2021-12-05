@@ -29,6 +29,7 @@ body {
   letter-spacing: 1px;
   color: white;
   background-color: var(--black);
+  overflow-x: hidden;
 }
 
 a {
