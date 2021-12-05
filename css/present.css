@@ -123,8 +123,8 @@
 }
 
 .terminal.appear .terminal-prompt {
-  animation: typing 0.5s steps(2) 2s forwards,
-    caret-blink-typing 2.5s steps(1) 1.5s forwards;
+  animation: typing 0.5s steps(2) 1s forwards,
+    caret-blink-typing 2.5s steps(1) 0.5s forwards;
 }
 
 @keyframes typing {
@@ -161,7 +161,7 @@
 }
 
 .terminal.appear .terminal-output {
-  animation: show-output 0s 4s forwards;
+  animation: show-output 0s 3.25s forwards;
 }
 
 @keyframes show-output {
