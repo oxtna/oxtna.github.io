@@ -12,24 +12,21 @@ window.addEventListener("scroll", () => {
 const cards = document.querySelectorAll(".card");
 cards.forEach((card) =>
 	card.addEventListener("click", () => {
-		if (card.classList.contains("reversed")) {
-			card.classList.remove("reversed");
-		} else {
-			card.classList.add("reversed");
-		}
+		card.classList.toggle("reversed");
 	})
 );
 
 const terminalTabs = document.querySelectorAll(".terminal-tab");
 terminalTabs.forEach((terminalTab) =>
 	terminalTab.addEventListener("click", () => {
-		if (terminalTab.classList.contains("selected")) {
-			terminalTab.classList.remove("selected");
+		if (!terminalTab.classList.toggle("selected")) {
 			return;
 		} else {
-			terminalTabs.forEach((otherTerminalTab) =>
-				otherTerminalTab.classList.remove("selected"));
-			terminalTab.classList.add("selected");
+			terminalTabs.forEach((otherTerminalTab) => {
+				if (otherTerminalTab !== terminalTab) {
+					otherTerminalTab.classList.remove("selected");
+				}
+			});
 		}
 	})
 );
