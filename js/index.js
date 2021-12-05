@@ -1,6 +1,6 @@
 "use strict";
 
-const nav = document.getElementsByClassName("nav")[0];
+const nav = document.querySelector(".nav");
 window.addEventListener("scroll", () => {
 	if (window.scrollY > 0) {
 		nav.classList.add("scrolled");
@@ -9,8 +9,8 @@ window.addEventListener("scroll", () => {
 	}
 });
 
-const cards = document.getElementsByClassName("card");
-Array.from(cards).forEach((card) =>
+const cards = document.querySelectorAll(".card");
+cards.forEach((card) =>
 	card.addEventListener("click", () => {
 		if (card.classList.contains("reversed")) {
 			card.classList.remove("reversed");
@@ -20,15 +20,16 @@ Array.from(cards).forEach((card) =>
 	})
 );
 
-const terminalTabs = document.getElementsByClassName("terminal-tab");
-Array.from(terminalTabs).forEach((terminalTab) =>
+const terminalTabs = document.querySelectorAll(".terminal-tab");
+terminalTabs.forEach((terminalTab) =>
 	terminalTab.addEventListener("click", () => {
 		if (terminalTab.classList.contains("selected")) {
 			terminalTab.classList.remove("selected");
 			return;
+		} else {
+			terminalTabs.forEach((otherTerminalTab) =>
+				otherTerminalTab.classList.remove("selected"));
+			terminalTab.classList.add("selected");
 		}
-		Array.from(terminalTabs).forEach((otherTerminalTab) =>
-			otherTerminalTab.classList.remove("selected"));
-		terminalTab.classList.add("selected");
 	})
 );
