@@ -48,3 +48,6 @@ const contentObserver = new IntersectionObserver((entries, observer) => {
 
 const contentWrappers = document.querySelectorAll(".fade-in");
 contentWrappers.forEach(contentWrapper => contentObserver.observe(contentWrapper));
+
+const terminal = document.querySelector(".terminal");
+contentObserver.observe(terminal);

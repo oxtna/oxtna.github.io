@@ -104,8 +104,27 @@
   border-right: 1ch solid white;
   width: 4ch;
   white-space: nowrap;
-  animation: typing 0.5s steps(2) 1s forwards,
-    caret-blink 2.5s steps(1) 0.5s forwards;
+}
+
+.terminal:not(.appear) .terminal-prompt {
+  animation: caret-blink 1s steps(1) 0s infinite;
+}
+
+@keyframes caret-blink {
+  0% {
+    border-color: white;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: white;
+  }
+}
+
+.terminal.appear .terminal-prompt {
+  animation: typing 0.5s steps(2) 2s forwards,
+    caret-blink-typing 2.5s steps(1) 1.5s forwards;
 }
 
 @keyframes typing {
@@ -114,7 +133,7 @@
   }
 }
 
-@keyframes caret-blink {
+@keyframes caret-blink-typing {
   0% {
     border-color: transparent;
   }
@@ -139,7 +158,10 @@
 .terminal-output {
   margin-top: 1rem;
   visibility: hidden;
-  animation: show-output 0s 3s forwards;
+}
+
+.terminal.appear .terminal-output {
+  animation: show-output 0s 4s forwards;
 }
 
 @keyframes show-output {
