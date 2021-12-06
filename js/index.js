@@ -16,12 +16,18 @@ cards.forEach((card) =>
 	})
 );
 
+const terminal = document.querySelector(".terminal");
 const terminalTabs = document.querySelectorAll(".terminal-tab");
 terminalTabs.forEach((terminalTab) =>
 	terminalTab.addEventListener("click", () => {
 		if (!terminalTab.classList.toggle("selected")) {
+			terminal.classList.remove("animation-play");
 			return;
 		} else {
+			// Restart animation
+			if (!terminal.classList.toggle("animation-play")) {
+				terminal.classList.toggle("animation-play");
+			}
 			terminalTabs.forEach((otherTerminalTab) => {
 				if (otherTerminalTab !== terminalTab) {
 					otherTerminalTab.classList.remove("selected");
@@ -37,7 +43,7 @@ const contentObserverOptions = {
 };
 
 const contentObserver = new IntersectionObserver((entries, observer) => {
-	entries.forEach(entry => {
+	entries.forEach((entry) => {
 		if (!entry.isIntersecting) {
 			return;
 		}
@@ -47,7 +53,4 @@ const contentObserver = new IntersectionObserver((entries, observer) => {
 }, contentObserverOptions);
 
 const contentWrappers = document.querySelectorAll(".fade-in");
-contentWrappers.forEach(contentWrapper => contentObserver.observe(contentWrapper));
-
-const terminal = document.querySelector(".terminal");
-contentObserver.observe(terminal);
+contentWrappers.forEach((contentWrapper) => contentObserver.observe(contentWrapper));

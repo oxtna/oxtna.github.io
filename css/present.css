@@ -106,7 +106,7 @@
   white-space: nowrap;
 }
 
-.terminal:not(.appear) .terminal-prompt {
+.terminal:not(.animation-play) .terminal-prompt {
   animation: caret-blink 1s steps(1) 0s infinite;
 }
 
@@ -122,7 +122,7 @@
   }
 }
 
-.terminal.appear .terminal-prompt {
+.terminal.animation-play .terminal-prompt {
   animation: typing 0.5s steps(2) 1s forwards,
     caret-blink-typing 2.5s steps(1) 0.5s forwards;
 }
@@ -160,7 +160,7 @@
   visibility: hidden;
 }
 
-.terminal.appear .terminal-output {
+.terminal.animation-play .terminal-output {
   animation: show-output 0s 3.25s forwards;
 }
 
