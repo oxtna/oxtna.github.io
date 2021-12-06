@@ -76,6 +76,18 @@ img {
   font-size: 0.75rem !important;
 }
 
+.mark {
+  background: linear-gradient(
+    to right,
+    var(--tertiary-color) 40%,
+    var(--secondary-color)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+
 .h1 {
   font-family: "Spartan-SemiBold";
   letter-spacing: 4px;
