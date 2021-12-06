@@ -66,9 +66,13 @@ img {
   opacity: 1;
 }
 
-/* Heading and text stylings */
+@media only screen and (hover) {
+  .mobile-only {
+    display: hidden;
+  }
+}
 
-.centered-text {
+@media only screen and (min-width: ) /* Heading and text stylings */ .centered-text {
   text-align: center;
 }
 
@@ -79,13 +83,33 @@ img {
 .mark {
   background: linear-gradient(
     to right,
-    var(--tertiary-color) 40%,
-    var(--secondary-color)
+    var(--tertiary-color) 25%,
+    var(--secondary-color) 75%
   );
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  cursor: pointer;
+}
+
+@media only screen and (hover) {
+  .mark {
+    background: linear-gradient(
+      to right,
+      var(--tertiary-color) 15%,
+      var(--secondary-color) 35%,
+      var(--tertiary-color) 85%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 200%;
+    background-position: left;
+    transition: background-position 0.5s;
+    cursor: pointer;
+  }
+  .mark:hover,
+  .mark:focus {
+    background-position: right;
+  }
 }
 
 .h1 {

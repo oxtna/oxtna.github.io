@@ -1,5 +1,7 @@
 "use strict";
 
+const clickEvent = new Event("click");
+
 const nav = document.querySelector(".nav");
 window.addEventListener("scroll", () => {
 	if (window.scrollY > 0) {
@@ -25,6 +27,7 @@ terminalTabs.forEach((terminalTab) =>
 			return;
 		} else {
 			// Restart animation
+			// TODO: Fix bug where switching between tabs doesn't reset animation
 			if (!terminal.classList.toggle("animation-play")) {
 				terminal.classList.toggle("animation-play");
 			}
@@ -36,6 +39,13 @@ terminalTabs.forEach((terminalTab) =>
 		}
 	})
 );
+
+const marks = document.querySelectorAll(".mark");
+marks.forEach((mark, index) => {
+	mark.addEventListener("click", () => {
+		terminalTabs[index].dispatchEvent(clickEvent);
+	});
+});
 
 const contentObserverOptions = {
 	root: null,
