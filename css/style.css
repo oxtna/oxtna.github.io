@@ -41,18 +41,12 @@ img {
   pointer-events: none;
 }
 
+button {
+  all: unset;
+}
+
 .hidden {
   display: none;
-}
-
-.button {
-  background-color: var(--secondary-color);
-  width: max-content;
-}
-
-.button:hover,
-.button:focus {
-  background-color: var(--primary-color);
 }
 
 .fade-in {
@@ -68,19 +62,17 @@ img {
 
 @media only screen and (hover) {
   .mobile-only {
-    display: hidden;
+    display: none;
   }
 }
 
-@media only screen and (min-width: ) /* Heading and text stylings */ .centered-text {
-  text-align: center;
+@media not screen and (hover) {
+  .hover-only {
+    display: none;
+  }
 }
 
-.small-text {
-  font-size: 0.75rem !important;
-}
-
-.mark {
+.button {
   background: linear-gradient(
     to right,
     var(--tertiary-color) 25%,
@@ -92,11 +84,11 @@ img {
 }
 
 @media only screen and (hover) {
-  .mark {
+  .button {
     background: linear-gradient(
       to right,
       var(--tertiary-color) 15%,
-      var(--secondary-color) 35%,
+      var(--secondary-color) 35% 65%,
       var(--tertiary-color) 85%
     );
     background-clip: text;
@@ -106,10 +98,21 @@ img {
     transition: background-position 0.5s;
     cursor: pointer;
   }
-  .mark:hover,
-  .mark:focus {
+
+  .button:hover,
+  .button:focus {
     background-position: right;
   }
+}
+
+/* Heading and text stylings */
+
+.centered-text {
+  text-align: center;
+}
+
+.small-text {
+  font-size: 0.75rem !important;
 }
 
 .h1 {

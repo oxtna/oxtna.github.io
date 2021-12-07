@@ -40,10 +40,10 @@ terminalTabs.forEach((terminalTab) =>
 	})
 );
 
-const marks = document.querySelectorAll(".mark");
-marks.forEach((mark, index) => {
-	mark.addEventListener("click", () => {
-		terminalTabs[index].dispatchEvent(clickEvent);
+const presentButtons = document.querySelectorAll(".present .button");
+presentButtons.forEach((presentButton, index) => {
+	presentButton.addEventListener("click", () => {
+		terminalTabs.item(index).dispatchEvent(clickEvent);
 	});
 });
 
