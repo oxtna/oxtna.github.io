@@ -1,7 +1,7 @@
 /* Styling for project part of the website and relevant containers. */
 
 .projects {
-  background-color: var(--black);
+  background-color: black;
   padding: var(--nav-size) 20px;
 }
 

@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   height: 400px;
-  background-color: var(--black);
+  background-color: black;
   padding: var(--nav-size) 20px;
 }
 
@@ -46,5 +46,5 @@
 .contact-link:hover,
 .contact-link:focus {
   background-position: right;
-  color: var(--black);
+  color: black;
 }

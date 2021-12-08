@@ -1,6 +1,5 @@
 :root {
   /* color scheme */
-  --black: hsl(0, 0%, 0%);
   --gray: hsl(207, 5%, 33%);
   --primary-color: hsl(209, 62%, 14%);
   --secondary-color: hsl(211, 45%, 20%);
@@ -29,7 +28,7 @@ body {
   font-family: "Spartan-Light";
   letter-spacing: 1px;
   color: white;
-  background-color: var(--black);
+  background-color: black;
   overflow-x: hidden;
 }
 
