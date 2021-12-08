@@ -7,19 +7,100 @@
   top: 0;
   display: flex;
   align-items: stretch;
-  justify-content: center;
+  justify-content: end;
   letter-spacing: 1px;
-  transition-duration: 0.5s;
   z-index: 1;
+}
+
+.menu-button {
+  background: white;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 1rem 0.5rem;
+  border-radius: 0.75rem;
+  transition: transform 0.25s ease-in-out;
+}
+
+.menu-button.open {
+  transform: translateX(-8rem);
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  width: 1.5rem;
+  height: 3px;
+  background: black;
+  transition: transform 0.25s ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.hamburger::before {
+  bottom: 6px;
+}
+
+.hamburger::after {
+  top: 6px;
+}
+
+.menu-button.open .hamburger {
+  transform: rotate(45deg);
+}
+
+.menu-button.open .hamburger::before {
+  transform: rotate(90deg) translate(6px);
+}
+
+.menu-button.open .hamburger::after {
+  transform: rotate(90deg) translate(-6px);
+}
+
+.menu {
+  width: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  background: white;
+  border-radius: 0.75rem 0 0 0.75rem;
+  transform: translateX(100%);
+  transition: transform 0.25s ease-in-out;
+  padding: 1rem 0;
+}
+
+.menu > a {
+  color: black;
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.menu-button.open + .menu {
+  transform: translateX(0);
 }
 
 @media only screen and (min-width: 768px) {
   .nav {
     justify-content: flex-start;
     padding-left: 80px;
+    transition-duration: 0.5s;
   }
-}
 
-.nav.scrolled {
-  background-color: var(--black);
+  .nav.scrolled {
+    background-color: black;
+  }
 }

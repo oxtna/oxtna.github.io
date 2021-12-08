@@ -4,6 +4,7 @@ const clickEvent = new Event("click");
 
 // HTML document's elements
 const nav = document.querySelector(".nav");
+const menuButton = document.querySelector(".menu-button");
 const cards = document.querySelectorAll(".card");
 const buttons = document.querySelectorAll(".button");
 const terminalTabs = document.querySelectorAll(".terminal-tab");
@@ -17,6 +18,14 @@ window.addEventListener("scroll", () => {
 	} else {
 		nav.classList.remove("scrolled");
 	}
+});
+
+menuButton.addEventListener("click", () => {
+	menuButton.classList.toggle("open");
+});
+
+menuButton.addEventListener("blur", () => {
+	menuButton.classList.remove("open");
 });
 
 cards.forEach((card) =>
