@@ -5,8 +5,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   background-color: var(--black);
   padding: var(--nav-size);
+}
+
+@media only screen and (min-height: 640px) {
+  .contact {
+    height: 640px;
+  }
 }
 
 .contact-content-wrapper {
