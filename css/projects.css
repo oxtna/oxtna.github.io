@@ -37,7 +37,7 @@
 }
 
 .reversed {
-  background-color: var(--tertiary-color);
+  background-color: var(--secodary-color);
 }
 
 @media only screen and (min-width: 768px) {
@@ -68,7 +68,7 @@
     right: 0;
     bottom: 0;
     opacity: 0;
-    box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 8px 0 hsla(0, 0%, 100%, 0.6);
     border-radius: inherit;
     transition: opacity 0.25s ease;
     pointer-events: none;

@@ -1,10 +1,11 @@
 :root {
   /* color scheme */
-  --black: #010101ff;
-  --gray: #505559ff;
-  --primary-color: #0d2338;
-  --secondary-color: #e3b556ff;
-  --tertiary-color: #1c3249;
+  --black: hsl(0, 0%, 0%);
+  --gray: hsl(207, 5%, 33%);
+  --primary-color: hsl(209, 62%, 14%);
+  --secondary-color: hsl(211, 45%, 20%);
+  --primary-accent: hsl(40, 72%, 61%);
+  --secondary-accent: hsl(32, 100%, 40%);
 
   /* constant sizes */
   --nav-size: 50px;
@@ -75,8 +76,8 @@ button {
 .button {
   background: linear-gradient(
     to right,
-    var(--tertiary-color) 25%,
-    var(--secondary-color) 75%
+    var(--primary-accent) 25%,
+    var(--secondary-accent) 75%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -87,9 +88,9 @@ button {
   .button {
     background: linear-gradient(
       to right,
-      var(--tertiary-color) 15%,
-      var(--secondary-color) 35% 65%,
-      var(--tertiary-color) 85%
+      var(--primary-accent) 15%,
+      var(--secondary-accent) 35% 65%,
+      var(--primary-accent) 85%
     );
     background-clip: text;
     -webkit-background-clip: text;
@@ -138,7 +139,7 @@ button {
 .h2::after {
   content: "";
   display: block;
-  border-top: 0.15rem solid var(--secondary-color);
+  border-top: 0.15rem solid var(--primary-accent);
   margin-top: 1rem;
 }
 
@@ -204,5 +205,5 @@ button {
 
 .hover-highlight:hover,
 .hover-highlight:focus {
-  background-color: rgba(255, 255, 255, 0.35);
+  background-color: hsla(0, 0%, 100%, 0.35);
 }

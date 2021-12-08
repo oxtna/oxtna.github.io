@@ -1,7 +1,7 @@
 /* Styling specific to the website's entry point. */
 
 .home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0), hsl(0, 0%, 0%)),
     url("../img/photo/NASA-Japan-at-night.jpg");
   background-repeat: no-repeat;
   background-position: center;

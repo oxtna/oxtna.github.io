@@ -95,7 +95,7 @@
 }
 
 .terminal-button {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-accent);
   border-radius: 50%;
   height: 13px;
   width: 13px;
@@ -175,13 +175,13 @@
 }
 
 .yellow {
-  background-color: #f8b340;
+  background-color: hsl(37, 93%, 61%);
 }
 
 .green {
-  background-color: #40c44a;
+  background-color: hsl(125, 53%, 51%);
 }
 
 .red {
-  background-color: #f1544e;
+  background-color: hsl(2, 85%, 63%);
 }
