@@ -21,6 +21,8 @@
 
 .terminal {
   margin-top: 50px;
+  width: 100%;
+  max-width: 720px;
 }
 
 .terminal-header {
@@ -41,37 +43,48 @@
   width: 7rem;
   border-radius: 8px 8px 0 0;
   text-align: center;
-  cursor: pointer;
   position: relative;
+  display: none;
 }
 
 .terminal-tab.selected {
-  background-color: var(--black);
-  box-shadow: 0 2px 8px -2px var(--black);
+  display: unset;
 }
 
-.terminal-tab.selected::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: -16px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  box-shadow: 8px 8px 0 var(--black);
-  pointer-events: none;
-}
+@media only screen and (min-width: 768px) {
+  .terminal-tab {
+    display: unset;
+    cursor: pointer;
+  }
 
-.terminal-tab.selected::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: -16px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  box-shadow: -8px 8px 0 var(--black);
-  pointer-events: none;
+  .terminal-tab.selected {
+    background-color: var(--black);
+    box-shadow: 0 2px 8px -2px var(--black);
+  }
+
+  .terminal-tab.selected::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -16px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    box-shadow: 8px 8px 0 var(--black);
+    pointer-events: none;
+  }
+
+  .terminal-tab.selected::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -16px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    box-shadow: -8px 8px 0 var(--black);
+    pointer-events: none;
+  }
 }
 
 .terminal-button-container {
@@ -104,9 +117,6 @@
   border-right: 1ch solid white;
   width: 4ch;
   white-space: nowrap;
-}
-
-.terminal:not(.animation-play) .terminal-prompt {
   animation: caret-blink 1s steps(1) 0s infinite;
 }
 
@@ -122,7 +132,7 @@
   }
 }
 
-.terminal.animation-play .terminal-prompt {
+.terminal-prompt.typing {
   animation: typing 0.5s steps(2) 1s forwards,
     caret-blink-typing 2.5s steps(1) 0.5s forwards;
 }
@@ -160,7 +170,7 @@
   visibility: hidden;
 }
 
-.terminal.animation-play .terminal-output {
+.terminal-output:not(.hidden) {
   animation: show-output 0s 3.25s forwards;
 }
 

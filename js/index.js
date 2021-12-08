@@ -18,32 +18,46 @@ cards.forEach((card) =>
 	})
 );
 
-const terminal = document.querySelector(".terminal");
 const terminalTabs = document.querySelectorAll(".terminal-tab");
-terminalTabs.forEach((terminalTab) =>
+const terminalPrompt = document.querySelector(".terminal-prompt");
+const terminalOutputs = document.querySelectorAll(".terminal-output");
+terminalTabs.forEach((terminalTab, index) => {
 	terminalTab.addEventListener("click", () => {
-		if (!terminalTab.classList.toggle("selected")) {
-			terminal.classList.remove("animation-play");
-			return;
-		} else {
-			// Restart animation
-			// TODO: Fix bug where switching between tabs doesn't reset animation
-			if (!terminal.classList.toggle("animation-play")) {
-				terminal.classList.toggle("animation-play");
+		if (window.innerWidth >= 768) {
+			if (!terminalTab.classList.contains("selected")) {
+				terminalTab.classList.add("selected");
+				terminalOutputs.item(index).classList.remove("hidden");
+				terminalPrompt.classList.remove("typing");
+				void terminalPrompt.offsetWidth;
+				terminalPrompt.classList.add("typing");
 			}
-			terminalTabs.forEach((otherTerminalTab) => {
+			terminalTabs.forEach((otherTerminalTab, otherIndex) => {
 				if (otherTerminalTab !== terminalTab) {
 					otherTerminalTab.classList.remove("selected");
+					terminalOutputs.item(otherIndex).classList.add("hidden");
 				}
 			});
 		}
 	})
-);
+});
 
-const presentButtons = document.querySelectorAll(".present .button");
-presentButtons.forEach((presentButton, index) => {
-	presentButton.addEventListener("click", () => {
-		terminalTabs.item(index).dispatchEvent(clickEvent);
+const buttons = document.querySelectorAll(".button");
+buttons.forEach((button, index) => {
+	button.addEventListener("click", () => {
+		if (!terminalTabs.item(index).classList.contains("selected")) {
+			terminalTabs.item(index).classList.add("selected");
+			terminalOutputs.item(index).classList.remove("hidden");
+			terminalPrompt.classList.remove("typing");
+			void terminalPrompt.offsetWidth;
+			terminalPrompt.classList.add("typing");
+		}
+		terminalTabs.forEach((otherTerminalTab, tabIndex) => {
+			if (index === tabIndex) {
+				return;
+			}
+			otherTerminalTab.classList.remove("selected");
+			terminalOutputs.item(tabIndex).classList.add("hidden");
+		})
 	});
 });
 
