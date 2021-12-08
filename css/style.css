@@ -96,7 +96,7 @@ button {
     -webkit-background-clip: text;
     background-size: 200%;
     background-position: left;
-    transition: background-position 0.5s;
+    transition: background-position 0.5s linear;
     cursor: pointer;
   }
 
