@@ -71,7 +71,7 @@ buttons.forEach((button, index) => {
 // Make IntersectionObserver responsible for managing content that will fade in after scrolling down to it.
 const contentObserverOptions = {
 	root: null,
-	rootMargin: "0px 0px -10% 0px"
+	rootMargin: "0px 0px -20% 0px"
 };
 const contentObserver = new IntersectionObserver((entries, observer) => {
 	entries.forEach((entry) => {
