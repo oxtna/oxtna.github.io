@@ -133,8 +133,8 @@
 }
 
 .terminal-prompt.typing {
-  animation: typing 0.5s steps(2) 1s forwards,
-    caret-blink-typing 2.5s steps(1) 0.5s forwards;
+  animation: typing 0.5s steps(2) 0.5s forwards,
+    caret-blink-typing 1s steps(1) 0.25s forwards;
 }
 
 @keyframes typing {
@@ -147,13 +147,7 @@
   0% {
     border-color: transparent;
   }
-  20% {
-    border-color: white;
-  }
-  60% {
-    border-color: transparent;
-  }
-  80% {
+  50% {
     border-color: white;
   }
   100% {
@@ -171,7 +165,7 @@
 }
 
 .terminal-output:not(.hidden) {
-  animation: show-output 0s 3.25s forwards;
+  animation: show-output 0s 1.5s forwards;
 }
 
 @keyframes show-output {
