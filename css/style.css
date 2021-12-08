@@ -130,12 +130,6 @@ button {
   font-size: 1.5rem;
 }
 
-@media only screen and (min-width: 768px) {
-  .h2 {
-    font-size: 2rem;
-  }
-}
-
 .h2::after {
   content: "";
   display: block;
@@ -153,7 +147,21 @@ button {
 .h4 {
   line-height: 1.5rem;
   width: auto;
-  font-size: 1rem;
+  font-size: 0.75rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .h2 {
+    font-size: 2rem;
+  }
+
+  .h3 {
+    font-size: 1.25rem;
+  }
+
+  .h4 {
+    font-size: 1rem;
+  }
 }
 
 /* Stylings related to shapes and sizes */
