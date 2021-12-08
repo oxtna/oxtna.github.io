@@ -1,0 +1,44 @@
+/* Styling for the footer of the website containing attribution of licensed elements. */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  padding: 10px 20px;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background: var(--gray);
+  height: 1px;
+  width: 100%;
+}
+
+.attribution {
+  font-size: 0.4rem;
+}
+
+.third-party-attributions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .attribution {
+    font-size: 0.75rem;
+  }
+}
