@@ -7,7 +7,7 @@
   align-items: center;
   height: 400px;
   background-color: var(--black);
-  padding: var(--nav-size);
+  padding: var(--nav-size) 20px;
 }
 
 .contact-content-wrapper {
