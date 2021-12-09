@@ -5,19 +5,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background-color: black;
   padding: var(--nav-size) 20px;
-}
-
-@media only screen and (min-height: 640px) {
-  .about {
-    height: 640px;
-  }
 }
 
 .about-content-wrapper {
   width: 100%;
   max-width: 720px;
-  padding: 20px;
+  padding: 20px 0;
 }
