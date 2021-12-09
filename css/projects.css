@@ -20,14 +20,14 @@
 
 .card-grid {
   display: grid;
-  grid-template-rows: auto;
   grid-template-columns: auto;
-  padding: 30px 0;
+  padding: 50px 0;
   gap: 40px;
 }
 
 .card {
   display: flex;
+  position: relative;
   flex-direction: column;
   transition: transform 0.5s ease;
   min-width: 180px;
@@ -37,16 +37,82 @@
 }
 
 .reversed {
-  background-color: var(--secodary-color);
+  background-color: var(--secondary-color);
+}
+
+.click-me {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: white;
+  border-radius: 50%;
+  animation: tap 2s linear infinite;
+}
+
+@keyframes tap {
+  from {
+    transform: scale(1);
+  }
+  6% {
+    transform: scale(0.8);
+  }
+  12% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.click-me::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.click-me::after {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.1rem white;
+  animation: pulse 2s ease-out infinite;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.8);
+  }
+  10% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  30% {
+    transform: scale(1.5);
+  }
+  40% {
+    opacity: 0;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .card-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .card {
     min-width: 324px;
+  }
+
+  .wide-card {
+    grid-column: span 2;
   }
 }
 
