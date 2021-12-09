@@ -40,7 +40,7 @@
   background-color: var(--secondary-color);
 }
 
-.click-me {
+/* .click-me {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -100,7 +100,7 @@
     transform: scale(1.5);
     opacity: 0;
   }
-}
+} */
 
 @media only screen and (min-width: 768px) {
   .card-grid {
