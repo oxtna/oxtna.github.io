@@ -30,78 +30,12 @@
   position: relative;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.5s ease;
+  transition: transform 0.25s ease;
   min-width: 180px;
   width: 100%;
   background-color: var(--primary-color);
   padding: 20px;
 }
-
-/* .reversed {
-  background-color: var(--secondary-color);
-} */
-
-/* .click-me {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  height: 0.5rem;
-  width: 0.5rem;
-  background-color: white;
-  border-radius: 50%;
-  animation: tap 2s linear infinite;
-}
-
-@keyframes tap {
-  from {
-    transform: scale(1);
-  }
-  6% {
-    transform: scale(0.8);
-  }
-  12% {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-.click-me::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.click-me::after {
-  display: block;
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  box-shadow: 0 0 0 0.1rem white;
-  animation: pulse 2s ease-out infinite;
-}
-
-@keyframes pulse {
-  from {
-    transform: scale(0.8);
-  }
-  10% {
-    transform: scale(0.8);
-    opacity: 1;
-  }
-  30% {
-    transform: scale(1.5);
-  }
-  40% {
-    opacity: 0;
-  }
-  to {
-    transform: scale(1.5);
-    opacity: 0;
-  }
-} */
 
 .project-link {
   background-color: var(--secondary-color);
