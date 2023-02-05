@@ -29,7 +29,7 @@
   );
   background-size: 300%;
   background-position: left;
-  transition: background-position 0.5s linear, color 0.5s linear;
+  transition: background-position 0.25s linear, color 0.25s linear;
   font-family: "Spartan-Regular";
   line-height: 1.5rem;
   font-size: 0.7rem;

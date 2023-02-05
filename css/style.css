@@ -4,7 +4,7 @@
   --primary-color: hsl(209, 62%, 14%);
   --secondary-color: hsl(211, 45%, 20%);
   --primary-accent: hsl(40, 72%, 61%);
-  --secondary-accent: hsl(32, 100%, 40%);
+  --secondary-accent: hsl(24, 100%, 40%);
 
   /* constant sizes */
   --nav-size: 50px;
@@ -55,7 +55,7 @@ button {
   opacity: 0;
 }
 
-.fade-in.appear {
+.fade-in[data-appear="true"] {
   transform: translateX(0);
   opacity: 1;
 }
@@ -66,17 +66,17 @@ button {
   }
 }
 
-@media not screen and (hover) {
+@media not (hover) {
   .hover-only {
-    display: none;
+    display: none !important;
   }
 }
 
 .button {
   background: linear-gradient(
     to right,
-    var(--primary-accent) 25%,
-    var(--secondary-accent) 75%
+    var(--primary-accent) 45%,
+    var(--secondary-accent) 55%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -87,15 +87,14 @@ button {
   .button {
     background: linear-gradient(
       to right,
-      var(--primary-accent) 15%,
-      var(--secondary-accent) 35% 65%,
-      var(--primary-accent) 85%
+      var(--primary-accent) 45%,
+      var(--secondary-accent) 55%
     );
-    background-clip: text;
-    -webkit-background-clip: text;
     background-size: 200%;
     background-position: left;
-    transition: background-position 0.5s linear;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: background-position 0.25s ease-in-out;
     cursor: pointer;
   }
 
@@ -105,7 +104,7 @@ button {
   }
 }
 
-/* Heading and text stylings */
+/* Heading and text */
 
 .centered-text {
   text-align: center;
@@ -159,7 +158,7 @@ button {
   }
 }
 
-/* Stylings related to shapes and sizes */
+/* Shapes and sizes */
 
 .full-width {
   width: 100%;
@@ -215,4 +214,28 @@ button {
 .hover-highlight:hover,
 .hover-highlight:focus {
   background-color: hsla(0, 0%, 100%, 0.35);
+}
+
+.hover-underline {
+  position: relative;
+  display: inline-flex;
+  overflow-x: hidden;
+}
+
+.hover-underline::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-110%);
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  transition: 0.25s ease-in-out;
+}
+
+.hover-underline:hover::after,
+.hover-underline:focus::after {
+  transform: translateX(0);
 }

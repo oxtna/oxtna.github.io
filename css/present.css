@@ -46,44 +46,8 @@
   display: none;
 }
 
-.terminal-tab.selected {
+.terminal-tab[data-selected="true"] {
   display: unset;
-}
-
-@media only screen and (min-width: 768px) {
-  .terminal-tab {
-    display: unset;
-    cursor: pointer;
-  }
-
-  .terminal-tab.selected {
-    background-color: black;
-    box-shadow: 0 2px 8px -2px black;
-  }
-
-  .terminal-tab.selected::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -16px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    box-shadow: 8px 8px 0 black;
-    pointer-events: none;
-  }
-
-  .terminal-tab.selected::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: -16px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    box-shadow: -8px 8px 0 black;
-    pointer-events: none;
-  }
 }
 
 .terminal-button-container {
@@ -101,12 +65,27 @@
   margin-right: 10px;
 }
 
+.terminal-button[data-color="yellow"] {
+  background-color: hsl(37, 93%, 61%);
+}
+
+.terminal-button[data-color="green"] {
+  background-color: hsl(125, 53%, 51%);
+}
+
+.terminal-button[data-color="red"] {
+  background-color: hsl(2, 85%, 63%);
+}
+
 .terminal-content {
   font-family: "SourceCodePro-Light";
   letter-spacing: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   background-color: var(--primary-color);
   width: 100%;
-  height: 50vh;
+  height: 200px;
   border-radius: 0 0 8px 8px;
   padding: 20px;
 }
@@ -119,6 +98,25 @@
   animation: caret-blink 1s steps(1) 0s infinite;
 }
 
+.terminal-prompt[data-typing="true"] {
+  animation: typing 0.5s steps(2) 0.5s forwards,
+    caret-blink-typing 1s steps(1) 0.25s forwards;
+}
+
+.terminal-prompt::before {
+  content: ">> ";
+}
+
+.terminal-output {
+  display: none;
+  visibility: hidden;
+}
+
+.terminal-output[data-selected="true"] {
+  display: unset;
+  animation: show-output 0s 1.5s forwards;
+}
+
 @keyframes caret-blink {
   0% {
     border-color: white;
@@ -129,11 +127,6 @@
   100% {
     border-color: white;
   }
-}
-
-.terminal-prompt.typing {
-  animation: typing 0.5s steps(2) 0.5s forwards,
-    caret-blink-typing 1s steps(1) 0.25s forwards;
 }
 
 @keyframes typing {
@@ -154,33 +147,48 @@
   }
 }
 
-.terminal-prompt::before {
-  content: ">> ";
-}
-
-.terminal-output {
-  margin-top: 1rem;
-  visibility: hidden;
-}
-
-.terminal-output:not(.hidden) {
-  animation: show-output 0s 1.5s forwards;
-}
-
 @keyframes show-output {
   to {
     visibility: visible;
   }
 }
 
-.yellow {
-  background-color: hsl(37, 93%, 61%);
-}
+@media only screen and (min-width: 768px) {
+  .terminal-content {
+    height: 320px;
+  }
 
-.green {
-  background-color: hsl(125, 53%, 51%);
-}
+  .terminal-tab {
+    display: unset;
+    cursor: pointer;
+  }
 
-.red {
-  background-color: hsl(2, 85%, 63%);
+  .terminal-tab[data-selected="true"] {
+    background-color: black;
+    box-shadow: 0 2px 8px -2px black;
+  }
+  
+  .terminal-tab[data-selected="true"]::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -16px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    box-shadow: 8px 8px 0 black;
+    pointer-events: none;
+  }
+
+  .terminal-tab[data-selected="true"]::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -16px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    box-shadow: -8px 8px 0 black;
+    pointer-events: none;
+  }
 }

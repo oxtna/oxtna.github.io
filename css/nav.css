@@ -14,15 +14,16 @@
 
 .menu-button {
   background: white;
-  position: absolute;
+  position: fixed;
   top: 1rem;
   right: 1rem;
   padding: 1rem 0.5rem;
   border-radius: 0.75rem;
   transition: transform 0.25s ease-in-out;
+  z-index: 1;
 }
 
-.menu-button.open {
+.menu-button[data-open="true"] {
   transform: translateX(-8rem);
 }
 
@@ -55,15 +56,15 @@
   top: 6px;
 }
 
-.menu-button.open .hamburger {
+.menu-button[data-open="true"]>.hamburger {
   transform: rotate(45deg);
 }
 
-.menu-button.open .hamburger::before {
+.menu-button[data-open="true"]>.hamburger::before {
   transform: rotate(90deg) translate(6px);
 }
 
-.menu-button.open .hamburger::after {
+.menu-button[data-open="true"]>.hamburger::after {
   transform: rotate(90deg) translate(-6px);
 }
 
@@ -73,7 +74,7 @@
   flex-direction: column;
   align-items: stretch;
   gap: 1rem;
-  position: absolute;
+  position: fixed;
   top: 1rem;
   right: 0;
   background: white;
@@ -81,15 +82,16 @@
   transform: translateX(100%);
   transition: transform 0.25s ease-in-out;
   padding: 1rem 0;
+  z-index: 1;
 }
 
-.menu > a {
+.menu>a {
   color: black;
   height: 1.5rem;
   line-height: 1.5rem;
 }
 
-.menu-button.open + .menu {
+.menu-button[data-open="true"]+.menu {
   transform: translateX(0);
 }
 
@@ -97,10 +99,12 @@
   .nav {
     justify-content: flex-start;
     padding-left: 80px;
+    border-bottom: 1px solid transparent;
     transition-duration: 0.5s;
   }
 
-  .nav.scrolled {
+  .nav[data-scrolled="true"] {
     background-color: black;
+    border-bottom: 1px solid var(--secondary-accent);
   }
 }
