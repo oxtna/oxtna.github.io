@@ -8,6 +8,8 @@ const StyledContact = styled.div`
 
 const Heading = styled.h2`
   font-family: "League Spartan";
+  width: max-content;
+  margin: auto;
   font-size: 1.75rem;
   text-align: center;
   margin-bottom: 1rem;
@@ -34,10 +36,12 @@ const ContactInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin: auto;
   font-family: "League Spartan";
 
   @media (min-width: 481px) {
     font-size: 1.25rem;
+    width: 75%;
   }
 
   @media (min-width: 769px) {
