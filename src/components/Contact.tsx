@@ -3,7 +3,7 @@ import styled from "styled-components";
 const StyledContact = styled.div`
   color: black;
   background-color: white;
-  padding: 1rem 3rem 2rem;
+  padding: 1.5rem 3rem 3rem;
 `;
 
 const Heading = styled.h2`
@@ -11,6 +11,23 @@ const Heading = styled.h2`
   font-size: 1.75rem;
   text-align: center;
   margin-bottom: 1rem;
+
+  @media (min-width: 481px) {
+    font-size: 2.25rem;
+  }
+
+  @media (min-width: 769px) {
+    // small laptops
+  }
+
+  @media (min-width: 1025px) {
+    // large laptops
+  }
+
+  @media (pointer: fine) {
+    // mouse only
+    // parallax
+  }
 `;
 
 const ContactInfo = styled.div`
@@ -18,6 +35,23 @@ const ContactInfo = styled.div`
   flex-direction: column;
   gap: 1rem;
   font-family: "League Spartan";
+
+  @media (min-width: 481px) {
+    font-size: 1.25rem;
+  }
+
+  @media (min-width: 769px) {
+    // small laptops
+  }
+
+  @media (min-width: 1025px) {
+    // large laptops
+  }
+
+  @media (pointer: fine) {
+    // mouse only
+    // parallax
+  }
 `;
 
 const ContactInfoItem = styled.div`

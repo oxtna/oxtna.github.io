@@ -4,8 +4,25 @@ import Technology from "../interfaces/Technology";
 import TechStackItem from "./TechStackItem";
 
 const StyledTechStack = styled.div`
-  margin: 3rem auto;
-  padding: 0 3rem;
+  padding: 2rem 3rem;
+  margin: 2rem auto;
+
+  @media (min-width: 481px) {
+    max-width: 75%;
+  }
+
+  @media (min-width: 769px) {
+    // small laptops
+  }
+
+  @media (min-width: 1025px) {
+    // large laptops
+  }
+
+  @media (pointer: fine) {
+    // mouse only
+    // parallax
+  }
 `;
 
 const Heading = styled.h2`
@@ -13,6 +30,23 @@ const Heading = styled.h2`
   font-size: 1.75rem;
   text-align: center;
   margin-bottom: 1.5rem;
+
+  @media (min-width: 481px) {
+    font-size: 2.25rem;
+  }
+
+  @media (min-width: 769px) {
+    // small laptops
+  }
+
+  @media (min-width: 1025px) {
+    // large laptops
+  }
+
+  @media (pointer: fine) {
+    // mouse only
+    // parallax
+  }
 `;
 
 const TechStackItemContainer = styled.div`

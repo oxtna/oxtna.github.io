@@ -2,9 +2,25 @@ import { forwardRef } from "react";
 import styled from "styled-components";
 
 const StyledAbout = styled.div`
-  margin: auto;
-  padding: 3rem 3rem 0;
-  margin: 0 auto 3rem;
+  padding: 2rem 3rem;
+  margin: 2rem auto;
+
+  @media (min-width: 481px) {
+    max-width: 75%;
+  }
+
+  @media (min-width: 769px) {
+    // small laptops
+  }
+
+  @media (min-width: 1025px) {
+    // large laptops
+  }
+
+  @media (pointer: fine) {
+    // mouse only
+    // parallax
+  }
 `;
 
 const Heading = styled.h2`
@@ -12,22 +28,56 @@ const Heading = styled.h2`
   font-family: "League Spartan";
   text-align: center;
   margin-bottom: 1rem;
+
+  @media (min-width: 481px) {
+    font-size: 2.25rem;
+  }
+
+  @media (min-width: 769px) {
+    // small laptops
+  }
+
+  @media (min-width: 1025px) {
+    // large laptops
+  }
+
+  @media (pointer: fine) {
+    // mouse only
+    // parallax
+  }
 `;
 
 const Content = styled.p`
   font-size: 1rem;
   font-family: "League Spartan";
+
+  @media (min-width: 481px) {
+    font-size: 1.25rem;
+  }
+
+  @media (min-width: 769px) {
+    // small laptops
+  }
+
+  @media (min-width: 1025px) {
+    // large laptops
+  }
+
+  @media (pointer: fine) {
+    // mouse only
+    // parallax
+  }
 `;
 
 const About = forwardRef<HTMLDivElement>((_, ref) => (
   <StyledAbout ref={ref}>
     <Heading>About me</Heading>
     <Content>
-      I'm a CompSci student, spending copious amounts of time tinkering with my
-      configs and making new projects. Web dev is where I feel most comfortable,
-      but I'm also exploring other areas, all the while actively seeking my
-      first professional opportunity as a software developer to begin my career
-      in the industry.
+      I'm a CompSci undergrad, spending copious amounts of time tinkering with
+      my configs and making new projects. Web dev is where I feel most
+      comfortable, but I'm also exploring other areas, all the while actively
+      seeking my first professional opportunity as a software developer to begin
+      my career in the industry.
     </Content>
   </StyledAbout>
 ));

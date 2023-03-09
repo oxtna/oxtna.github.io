@@ -10,9 +10,10 @@ interface Props {
 
 const StyledProjects = styled.div`
   display: grid;
+  justify-items: center;
   grid-template-columns: 1fr;
   gap: 1rem;
-  padding: 1rem 3rem 3rem;
+  padding: 1.5rem 3rem 4rem;
   margin: 0;
   background: linear-gradient(40deg, hsl(340 70% 50%), hsl(35 85% 50%));
   background-size: 500% 100%;
@@ -20,10 +21,27 @@ const StyledProjects = styled.div`
 `;
 
 const Heading = styled.h2`
-  font-size: 1.75rem;
   font-family: "League Spartan";
+  font-size: 1.75rem;
   text-align: center;
   padding: 0.5rem 0;
+
+  @media (min-width: 481px) {
+    font-size: 2.25rem;
+  }
+
+  @media (min-width: 769px) {
+    // small laptops
+  }
+
+  @media (min-width: 1025px) {
+    // large laptops
+  }
+
+  @media (pointer: fine) {
+    // mouse only
+    // parallax
+  }
 `;
 
 const Projects: React.FC<Props> = ({ username, topics: projectTopics }) => {

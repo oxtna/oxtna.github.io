@@ -6,6 +6,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
+// TODO: Add css variables that have container width using media queries
 const App: React.FC = () => {
   const aboutRef = useRef<HTMLDivElement>(null);
 

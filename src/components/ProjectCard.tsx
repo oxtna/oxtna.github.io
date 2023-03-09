@@ -17,6 +17,23 @@ const StyledProjectCard = styled.div`
   padding-left: 1.5rem;
   overflow: hidden;
   font-family: "League Spartan";
+
+  @media (min-width: 481px) {
+    width: 75%;
+  }
+
+  @media (min-width: 769px) {
+    // small laptops
+  }
+
+  @media (min-width: 1025px) {
+    // large laptops
+  }
+
+  @media (pointer: fine) {
+    // mouse only
+    // parallax
+  }
 `;
 
 const Heading = styled.a`
@@ -26,10 +43,45 @@ const Heading = styled.a`
   color: white;
   text-decoration: none;
   padding-top: 0.5rem;
+
+  @media (min-width: 481px) {
+    font-size: 1.5rem;
+    padding-top: 0.75rem;
+  }
+
+  @media (min-width: 769px) {
+    // small laptops
+  }
+
+  @media (min-width: 1025px) {
+    // large laptops
+  }
+
+  @media (pointer: fine) {
+    // mouse only
+    // parallax
+  }
 `;
 
 const Description = styled.p`
   font-size: 0.8rem;
+
+  @media (min-width: 481px) {
+    font-size: 1rem;
+  }
+
+  @media (min-width: 769px) {
+    // small laptops
+  }
+
+  @media (min-width: 1025px) {
+    // large laptops
+  }
+
+  @media (pointer: fine) {
+    // mouse only
+    // parallax
+  }
 `;
 
 const LinkButton = styled.a`
@@ -57,6 +109,7 @@ const LinkButton = styled.a`
   &::after {
     content: "➤";
     font-size: 2rem;
+    height: 1.25em;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -71,6 +124,25 @@ const LinkButton = styled.a`
 
   &:hover::after {
     right: 15%;
+  }
+
+  @media (min-width: 481px) {
+    &::after {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (min-width: 769px) {
+    // small laptops
+  }
+
+  @media (min-width: 1025px) {
+    // large laptops
+  }
+
+  @media (pointer: fine) {
+    // mouse only
+    // parallax
   }
 `;
 

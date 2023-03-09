@@ -7,6 +7,24 @@ const StyledProfile = styled.div`
   align-items: center;
   gap: 3rem;
   width: 16rem;
+
+  @media (min-width: 481px) {
+    width: 20rem;
+    gap: 4rem;
+  }
+
+  @media (min-width: 769px) {
+    // small laptops
+  }
+
+  @media (min-width: 1025px) {
+    // large laptops
+  }
+
+  @media (pointer: fine) {
+    // mouse only
+    // parallax
+  }
 `;
 
 const ProfileImage = styled.img`

@@ -25,7 +25,7 @@ const StyledFooter = styled.footer`
 `;
 
 const Copyright = styled.span`
-  font-size: 0.8rem;
+  font-size: 0.8em;
   color: gray;
 `;
 

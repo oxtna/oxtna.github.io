@@ -22,6 +22,24 @@ const StyledHeader = styled.header`
     background-size: 500% 100%;
     animation: gradient-flow 20s ease infinite;
   }
+
+  @media (min-width: 481px) {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+
+  @media (min-width: 769px) {
+    // small laptops
+  }
+
+  @media (min-width: 1025px) {
+    // large laptops
+  }
+
+  @media (pointer: fine) {
+    // mouse only
+    // parallax
+  }
 `;
 
 const Header: React.FC = () => {
