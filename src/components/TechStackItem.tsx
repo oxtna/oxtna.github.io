@@ -15,19 +15,6 @@ const StyledTechStackItem = styled.div`
   @media (min-width: 481px) {
     font-size: 1rem;
   }
-
-  @media (min-width: 769px) {
-    // small laptops
-  }
-
-  @media (min-width: 1025px) {
-    // large laptops
-  }
-
-  @media (pointer: fine) {
-    // mouse only
-    // parallax
-  }
 `;
 
 const TechLogo = styled.img`
@@ -36,19 +23,6 @@ const TechLogo = styled.img`
 
   @media (min-width: 481px) {
     width: 96px;
-  }
-
-  @media (min-width: 769px) {
-    // small laptops
-  }
-
-  @media (min-width: 1025px) {
-    // large laptops
-  }
-
-  @media (pointer: fine) {
-    // mouse only
-    // parallax
   }
 `;
 

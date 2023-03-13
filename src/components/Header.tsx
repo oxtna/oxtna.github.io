@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Navbar from "./Navbar";
 
 const StyledHeader = styled.header`
   display: flex;
@@ -29,16 +28,7 @@ const StyledHeader = styled.header`
   }
 
   @media (min-width: 769px) {
-    // small laptops
-  }
-
-  @media (min-width: 1025px) {
-    // large laptops
-  }
-
-  @media (pointer: fine) {
-    // mouse only
-    // parallax
+    margin-top: 0.5rem;
   }
 `;
 
@@ -46,7 +36,6 @@ const Header: React.FC = () => {
   return (
     <StyledHeader>
       <h1>oxtna.github.io</h1>
-      <Navbar></Navbar>
     </StyledHeader>
   );
 };

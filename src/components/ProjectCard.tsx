@@ -22,17 +22,8 @@ const StyledProjectCard = styled.div`
     width: 75%;
   }
 
-  @media (min-width: 769px) {
-    // small laptops
-  }
-
-  @media (min-width: 1025px) {
-    // large laptops
-  }
-
-  @media (pointer: fine) {
-    // mouse only
-    // parallax
+  @media (min-width: 1024px) {
+    max-width: min(60%, 768px);
   }
 `;
 
@@ -49,17 +40,8 @@ const Heading = styled.a`
     padding-top: 0.75rem;
   }
 
-  @media (min-width: 769px) {
-    // small laptops
-  }
-
-  @media (min-width: 1025px) {
-    // large laptops
-  }
-
-  @media (pointer: fine) {
-    // mouse only
-    // parallax
+  @media (min-width: 1024px) {
+    font-size: 1.75rem;
   }
 `;
 
@@ -70,21 +52,14 @@ const Description = styled.p`
     font-size: 1rem;
   }
 
-  @media (min-width: 769px) {
-    // small laptops
-  }
-
-  @media (min-width: 1025px) {
-    // large laptops
-  }
-
-  @media (pointer: fine) {
-    // mouse only
-    // parallax
+  @media (min-width: 1024px) {
+    font-size: 1.2rem;
   }
 `;
 
 const LinkButton = styled.a`
+  width: 100%;
+  height: 100%;
   grid-row: 1 / 3;
   grid-column: 2 / 3;
   position: relative;
@@ -123,26 +98,13 @@ const LinkButton = styled.a`
   }
 
   &:hover::after {
-    right: 15%;
+    right: 20%;
   }
 
   @media (min-width: 481px) {
     &::after {
       font-size: 2.5rem;
     }
-  }
-
-  @media (min-width: 769px) {
-    // small laptops
-  }
-
-  @media (min-width: 1025px) {
-    // large laptops
-  }
-
-  @media (pointer: fine) {
-    // mouse only
-    // parallax
   }
 `;
 

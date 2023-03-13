@@ -18,6 +18,10 @@ const StyledProjects = styled.div`
   background: linear-gradient(40deg, hsl(340 70% 50%), hsl(35 85% 50%));
   background-size: 500% 100%;
   animation: gradient-flow 20s ease infinite;
+
+  @media (min-width: 481px) {
+    padding: 2rem 3rem 6rem;
+  }
 `;
 
 const Heading = styled.h2`
@@ -28,19 +32,6 @@ const Heading = styled.h2`
 
   @media (min-width: 481px) {
     font-size: 2.25rem;
-  }
-
-  @media (min-width: 769px) {
-    // small laptops
-  }
-
-  @media (min-width: 1025px) {
-    // large laptops
-  }
-
-  @media (pointer: fine) {
-    // mouse only
-    // parallax
   }
 `;
 

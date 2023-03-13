@@ -4,6 +4,10 @@ const StyledContact = styled.div`
   color: black;
   background-color: white;
   padding: 1.5rem 3rem 3rem;
+
+  @media (min-width: 481px) {
+    padding: 2rem 3rem 4.5rem;
+  }
 `;
 
 const Heading = styled.h2`
@@ -16,19 +20,6 @@ const Heading = styled.h2`
 
   @media (min-width: 481px) {
     font-size: 2.25rem;
-  }
-
-  @media (min-width: 769px) {
-    // small laptops
-  }
-
-  @media (min-width: 1025px) {
-    // large laptops
-  }
-
-  @media (pointer: fine) {
-    // mouse only
-    // parallax
   }
 `;
 
@@ -44,17 +35,8 @@ const ContactInfo = styled.div`
     width: 75%;
   }
 
-  @media (min-width: 769px) {
-    // small laptops
-  }
-
-  @media (min-width: 1025px) {
-    // large laptops
-  }
-
-  @media (pointer: fine) {
-    // mouse only
-    // parallax
+  @media (min-width: 1024px) {
+    max-width: min(60%, 768px);
   }
 `;
 

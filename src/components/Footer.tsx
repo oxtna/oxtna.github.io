@@ -22,6 +22,10 @@ const StyledFooter = styled.footer`
     background-size: 500% 100%;
     animation: gradient-flow 20s ease infinite;
   }
+
+  @media (min-width: 481px) {
+    justify-content: space-evenly;
+  }
 `;
 
 const Copyright = styled.span`

@@ -10,20 +10,6 @@ const StyledProfile = styled.div`
 
   @media (min-width: 481px) {
     width: 20rem;
-    gap: 4rem;
-  }
-
-  @media (min-width: 769px) {
-    // small laptops
-  }
-
-  @media (min-width: 1025px) {
-    // large laptops
-  }
-
-  @media (pointer: fine) {
-    // mouse only
-    // parallax
   }
 `;
 
