@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import ParallaxBackground from "./ParallaxBackground";
 import Landing from "./Landing";
 import About from "./About";
 import TechStack from "./TechStack";
@@ -11,8 +12,9 @@ const App: React.FC = () => {
 
   return (
     <>
+      <ParallaxBackground />
       <Landing
-        onScrollClick={() =>
+        onScrollButtonClick={() =>
           aboutRef.current?.scrollIntoView({ behavior: "smooth" })
         }
       />

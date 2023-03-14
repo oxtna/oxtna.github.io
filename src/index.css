@@ -23,6 +23,13 @@
   margin: 0;
 }
 
+#root {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
