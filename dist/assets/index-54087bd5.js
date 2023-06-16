@@ -210,8 +210,8 @@ Error generating stack: `+i.message+`
   flex-flow: row wrap;
   justify-content: space-between;
   row-gap: 1rem;
-  column-gap: 0.5rem;
-`,Mh=()=>{const e=ae.useRef([{name:"Typescript",image:"img/typescript.png"},{name:"Javascript",image:"img/javascript.png"},{name:"React",image:"img/react.png"},{name:"CSS",image:"img/css.png"},{name:"Lua",image:"img/lua.png"},{name:"Python",image:"img/python.png"},{name:"C++",image:"img/c++.png"},{name:"Git",image:"img/git.png"},{name:"Docker",image:"img/docker.png"}]);return Oe($h,{children:[D(Ih,{children:"Technologies I use"}),D(jh,{children:e.current.map((t,n)=>D(Oh,{name:t.name,image:t.image},n))})]})},Dh=Q.div`
+  column-gap: 2rem;
+`,Mh=()=>{const e=ae.useRef([{name:"Typescript",image:"img/typescript.png"},{name:"Javascript",image:"img/javascript.png"},{name:"React",image:"img/react.png"},{name:"CSS",image:"img/css.png"},{name:"Bootstrap",image:"img/bootstrap.png"},{name:"Lua",image:"img/lua.png"},{name:"PHP",image:"img/php.png"},{name:"Python",image:"img/python.png"},{name:"Git",image:"img/git.png"},{name:"Docker",image:"img/docker.png"},{name:"SQL",image:"img/sql.png"},{name:"C++",image:"img/c++.png"},{name:"Java",image:"img/java.png"},{name:"C#",image:"img/c_sharp.png"}]);return Oe($h,{children:[D(Ih,{children:"Technologies I know"}),D(jh,{children:e.current.map((t,n)=>D(Oh,{name:t.name,image:t.image},n))})]})},Dh=Q.div`
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 2fr 3fr;
