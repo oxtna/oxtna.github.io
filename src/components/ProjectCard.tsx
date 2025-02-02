@@ -8,6 +8,7 @@ interface Props {
 
 const StyledProjectCard = styled.div`
   display: grid;
+  width: 100%;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 2fr 3fr;
   align-items: center;
