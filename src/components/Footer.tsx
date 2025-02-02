@@ -36,7 +36,7 @@ const Copyright = styled.span`
 const Footer: React.FC = () => {
   return (
     <StyledFooter>
-      <Copyright>© 2023 Rafał Kajomof</Copyright>
+      <Copyright>© 2025 Rafał Kajomof</Copyright>
       <Attributions />
     </StyledFooter>
   );
