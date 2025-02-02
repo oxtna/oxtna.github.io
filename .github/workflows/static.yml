@@ -40,7 +40,7 @@ jobs:
         id: build
         run: npm run build
       - name: Copy images to built static files
-        run: cp ./img ./dist
+        run: cp -r ./img ./dist
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3
