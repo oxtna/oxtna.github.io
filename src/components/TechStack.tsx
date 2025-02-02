@@ -39,20 +39,18 @@ const TechStackItemContainer = styled.div`
 
 const TechStack: React.FC = () => {
   const technologies = useRef<Array<Technology>>([
-    { name: "Typescript", image: "img/typescript.png" },
     { name: "Javascript", image: "img/javascript.png" },
+    { name: "Typescript", image: "img/typescript.png" },
     { name: "React", image: "img/react.png" },
-    { name: "CSS", image: "img/css.png" },
-    { name: "Bootstrap", image: "img/bootstrap.png" },
     { name: "Lua", image: "img/lua.png" },
-    { name: "PHP", image: "img/php.png" },
     { name: "Python", image: "img/python.png" },
-    { name: "Git", image: "img/git.png" },
+    { name: "Django", image: "img/django.png" },
+    { name: "FastAPI", image: "img/fastapi.png" },
+    { name: "C++", image: "img/c++.png" },
+    { name: "C#", image: "img/c_sharp.png" },
     { name: "Docker", image: "img/docker.png" },
     { name: "SQL", image: "img/sql.png" },
-    { name: "C++", image: "img/c++.png" },
-    { name: "Java", image: "img/java.png" },
-    { name: "C#", image: "img/c_sharp.png" },
+    { name: "Git", image: "img/git.png" },
   ]);
 
   return (
